@@ -1,0 +1,780 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"inli",
+				"inline"
+			],
+			[
+				"al",
+				"alt	Attr"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"ba",
+				"background-repeat"
+			],
+			[
+				"bak",
+				"background-image"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"fo",
+				"font-family"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"bold",
+				"bold"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"head",
+				"header	Tag"
+			],
+			[
+				"st",
+				"style	Tag"
+			],
+			[
+				"wor",
+				"wordList"
+			],
+			[
+				"pa",
+				"pattern"
+			],
+			[
+				"pat",
+				"patternMatcher"
+			],
+			[
+				"word",
+				"wordPattern"
+			],
+			[
+				"w",
+				"wordPattern"
+			],
+			[
+				"tbt",
+				"tbt	toBeTruthy"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"pro",
+				"problemDescription"
+			],
+			[
+				"re",
+				"response"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"tbf",
+				"tbf	toBeFalsy"
+			],
+			[
+				"is",
+				"isIsomorphic"
+			],
+			[
+				"tt",
+				"tbt	toBeTrue"
+			],
+			[
+				"fa",
+				"false"
+			],
+			[
+				"duc",
+				"duplicate"
+			],
+			[
+				"con",
+				"containsNearbyDuplicate"
+			],
+			[
+				"co",
+				"containsNearbyDuplicate"
+			],
+			[
+				"cont",
+				"containsNearbyDuplicate"
+			],
+			[
+				"ob",
+				"obstacle"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"all",
+				"allProblems"
+			],
+			[
+				"ass",
+				"assets"
+			],
+			[
+				"ca",
+				"caption"
+			],
+			[
+				"left",
+				"leftMajor"
+			],
+			[
+				"right",
+				"rightMahor"
+			],
+			[
+				"righ",
+				"rightCount"
+			],
+			[
+				"lef",
+				"leftCount"
+			],
+			[
+				"tb",
+				"tb	toBe"
+			],
+			[
+				"tbn",
+				"tbn	toBeNull"
+			],
+			[
+				"ar",
+				"array"
+			],
+			[
+				"rev",
+				"reverse"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"prob",
+				"problem"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"padding-",
+				"padding-top"
+			],
+			[
+				"border-style",
+				"border-top-style"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"cate",
+				"category"
+			],
+			[
+				"bo",
+				"bootstrap"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"ht",
+				"htmlContent"
+			],
+			[
+				"b",
+				"blockquote	Tag"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"get",
+				"getProblemTitle"
+			],
+			[
+				"h",
+				"html"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"se",
+				"setProperty"
+			],
+			[
+				"S",
+				"SharedPropertyService"
+			],
+			[
+				"$SC",
+				"$scope	AngularJS"
+			],
+			[
+				"l",
+				"list"
+			],
+			[
+				"$rout",
+				"$routeParams	AngularJS"
+			],
+			[
+				"$rou",
+				"$routeParams	AngularJS(DI)"
+			],
+			[
+				"th",
+				"th	Tag"
+			],
+			[
+				"$sc",
+				"$scope	AngularJS"
+			],
+			[
+				"pr",
+				"problemCtrl"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
+				"t",
+				"tbody	Tag"
+			],
+			[
+				"ng-v",
+				"ng-view	AngularJS"
+			],
+			[
+				"ng",
+				"ng-app	AngularJS"
+			],
+			[
+				"le",
+				"leetcodeApp"
+			],
+			[
+				"$R",
+				"$routeProvider	AngularJS"
+			],
+			[
+				"a",
+				"app"
+			],
+			[
+				"src",
+				"src"
+			],
+			[
+				"sr",
+				"script	Tag"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"ng-op",
+				"ng-options	AngularJS"
+			],
+			[
+				"ng-re",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"ngre",
+				"ng-repeat	AngularJS"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 27.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ht",
+				"Set Syntax: HTML (Tcl)"
+			],
+			[
+				"ss an",
+				"Set Syntax: HTML (Angular.js)"
+			],
+			[
+				"ip",
+				"Package Control: Install Package"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"ss js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ss ang",
+				"Set Syntax: HTML (Angular.js)"
+			],
+			[
+				"ss amg",
+				"Set Syntax: HTML (Erlang)"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Yizhe/Documents/Git/cheatsheets",
+		"/Users/Yizhe/Documents/Git/cheatsheets/git",
+		"/Users/Yizhe/Documents/Git/cheatsheets/gpio"
+	],
+	"file_history":
+	[
+		"/Users/Yizhe/Documents/Git/cheatsheets/index.html",
+		"/Users/Yizhe/Documents/Git/cheatsheets/style.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/gpio/index.html",
+		"/Users/Yizhe/Documents/Git/cheatsheets/git/index.html",
+		"/Users/Yizhe/Documents/Git/cheatsheets/git/style.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/.gitignore",
+		"/Users/Yizhe/Downloads/Git.html",
+		"/Users/Yizhe/Downloads/Git_files/style.css",
+		"/Users/Yizhe/Documents/leetcode/.gitignore",
+		"/Users/Yizhe/Documents/leetcode/tests/spec-word-pattern.js",
+		"/Users/Yizhe/Documents/leetcode/assets/solutions/javascript/isomorphic-strings.js",
+		"/Users/Yizhe/Documents/leetcode/assets/solutions/javascript/word-pattern.js",
+		"/Users/Yizhe/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Yizhe/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/Yizhe/Documents/leetcode/assets/questions/list.js",
+		"/Users/Yizhe/Documents/leetcode/views/problem_solution.html",
+		"/Users/Yizhe/Documents/leetcode/index.html",
+		"/Users/Yizhe/Documents/leetcode/assets/questions/problemDescriptions.js",
+		"/Users/Yizhe/Documents/leetcode/assets/questions/descriptions/plus-one.html",
+		"/Users/Yizhe/Documents/leetcode/assets/questions/descriptions/contains-duplicate.html",
+		"/Users/Yizhe/Documents/leetcode/assets/questions/descriptions/rotate-array.html",
+		"/Users/Yizhe/Documents/leetcode/assets/questions/descriptions/remove-element.html",
+		"/Users/Yizhe/Documents/leetcode/assets/questions/descriptions/contains-duplicate-ii.html",
+		"/Users/Yizhe/Documents/leetcode/assets/questions/descriptions/majority-element.html",
+		"/Users/Yizhe/Documents/leetcode/assets/questions/descriptions/summary-ranges.html",
+		"/Users/Yizhe/Documents/leetcode/assets/questions/descriptions/remove-duplicates-from-sorted-array.html",
+		"/Users/Yizhe/Documents/leetcode/assets/questions/descriptions/reverse-linked-list-ii.html",
+		"/Users/Yizhe/Documents/leetcode/assets/questions/descriptions/reverse-linked-list.html",
+		"/Users/Yizhe/Documents/leetcode/assets/questions/descriptions/valid-sudoku.html",
+		"/Users/Yizhe/Documents/leetcode/assets/questions/descriptions/happy-number.html",
+		"/Users/Yizhe/Documents/leetcode/assets/questions/descriptions/unique-paths.html",
+		"/Users/Yizhe/Documents/leetcode/assets/questions/descriptions/unique-paths-ii.html",
+		"/Users/Yizhe/Documents/leetcode/assets/questions/descriptions/word-pattern.html",
+		"/Users/Yizhe/Documents/leetcode/assets/questions/descriptions/isomorphic-strings.html",
+		"/Users/Yizhe/Documents/leetcode/js/config.js",
+		"/Users/Yizhe/Documents/leetcode/views/problem_lists.html",
+		"/D/Yizhe/Documents/Git/Leetcode/tests/spec-isomorphic-strings.js",
+		"/D/Yizhe/Documents/Git/Leetcode/assets/questions/problemList.js",
+		"/D/Yizhe/Documents/Git/Leetcode/assets/questions/problemDescriptions.js",
+		"/D/Yizhe/Documents/Git/Leetcode/assets/solutions/javascript/isomorphic-strings.js",
+		"/D/Yizhe/Documents/Git/Leetcode/tests/spec-contains-duplicate-ii.js",
+		"/D/Yizhe/Documents/Git/Leetcode/assets/solutions/javascript/contains-duplicate-ii.js",
+		"/D/Yizhe/Documents/Git/Leetcode/assets/solutions/javascript/contains-duplicate.js",
+		"/D/Yizhe/Documents/Git/Leetcode/tests/spec-unique-paths-ii.js",
+		"/D/Yizhe/Documents/Git/Leetcode/assets/solutions/javascript/unique-paths-ii.js",
+		"/D/Yizhe/Documents/Git/Leetcode/assets/solutions/javascript/unique-paths.js",
+		"/C/Users/Yizhe.DESKTOP-MQHJAOC/AppData/Local/Google/Chrome/User Data/Default/Extensions/pdnfnkhpgegpcingjbfihlkjeighnddk/2.8.0.6_0/chrome/proxy.js",
+		"/C/Users/Yizhe.DESKTOP-MQHJAOC/AppData/Local/Google/Chrome/User Data/Default/Extensions/pdnfnkhpgegpcingjbfihlkjeighnddk/2.8.0.6_0/chrome/redirect.js",
+		"/D/Yizhe/Documents/Git/Leetcode/js/config.js",
+		"/D/Yizhe/Documents/Git/Leetcode/js/functions.js",
+		"/D/Yizhe/Documents/Git/Leetcode/views/problem_lists.html",
+		"/D/Yizhe/Documents/Git/blog/themes/hueman/_config.yml",
+		"/D/Yizhe/Documents/Git/Leetcode/tests/spec-unique-paths.js",
+		"/D/Yizhe/Documents/WebService/Leetcode/assets/questions/problemDescriptions.js",
+		"/D/Yizhe/Documents/WebService/Leetcode/assets/questions/problemList.js",
+		"/D/Yizhe/Documents/WebService/Leetcode/assets/solutions/javascript/majority-element.js",
+		"/D/Yizhe/Documents/WebService/Leetcode/tests/spec-majority-element.js",
+		"/D/Yizhe/Documents/WebService/Leetcode/tests/spec-summary-ranges.js",
+		"/D/Yizhe/Documents/Resume/js/data.js",
+		"/D/Yizhe/Downloads/CS_html_v1.html",
+		"/D/Yizhe/Downloads/CS_html_v2.html",
+		"/D/Yizhe/Documents/WebService/Leetcode/tests/controllers/spec-problem-controller.js",
+		"/D/Yizhe/Documents/WebService/Leetcode/assets/solutions/javascript/summary-ranges.js",
+		"/D/Yizhe/Documents/WebService/Leetcode/tests/spec-remove-duplicates-from-sorted-array.js",
+		"/D/Yizhe/Documents/WebService/Leetcode/assets/solutions/javascript/remove-duplicates-from-sorted-array.js",
+		"/D/Yizhe/Documents/WebService/Leetcode/js/config.js",
+		"/D/Yizhe/Documents/WebService/Leetcode/views/problem_lists.html",
+		"/D/Yizhe/Documents/WebService/Leetcode/css/app.css",
+		"/Users/Yizhe/Sites/leetcode/css/app.css",
+		"/Users/Yizhe/Sites/leetcode/views/problem_lists.html",
+		"/Users/Yizhe/Sites/leetcode/js/config.js",
+		"/D/Yizhe/Documents/Leetcode/Leetcode.sublime-workspace",
+		"/D/Yizhe/Documents/Leetcode/js/config.js",
+		"/D/Yizhe/Documents/Leetcode/js/functions.js",
+		"/D/Yizhe/Documents/Leetcode/index.html",
+		"/D/Yizhe/Documents/Leetcode/views/problem_solution.html",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/README.md",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/views/problem_lists.html",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/css/app.css",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/js/questions/problemList.js",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/js/questions/problemDescriptions.js",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/js/solutions/reverse-linked-list.js",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/js/solutions/reverse-linked-list-ii.js",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/index.html",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/js/solutions/plus-one.js",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/views/problem_solution.html",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/js/solutions/remove-element.js",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/js/solutions/remove-elements.js",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/js/problemList.js",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/js/problemDescriptions.js",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/js/hashtable/valid-sudoku.js",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/js/hashtable/happy-number.js",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/js/functions.js",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/js/categorizedProblemList.js",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/js/array/contains-duplicate.js",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/js/array/rotate-array.js",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/views/problems.html",
+		"/D/Yizhe/Downloads/test.html",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/js/problemLists.js",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/views/lists.html",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/views/categories.html",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/views/problem.html",
+		"/D/Yizhe/Documents/WebService/payment/index.html",
+		"/D/Yizhe/Documents/WebService/payment/js/app.js",
+		"/D/Yizhe/Documents/WebService/payment/views/welcome/set-language.html",
+		"/D/Yizhe/Documents/Leetcode_JavaScript/views/array/problems.html",
+		"/D/Yizhe/Documents/WebService/payment/js/modules/welcome.js",
+		"/D/Yizhe/Documents/WebService/payment/views/welcome/home.html",
+		"/D/Yizhe/Documents/WebService/payment/views/welcome/login.html",
+		"/Users/yizhewang/Downloads/routing.sh",
+		"/Users/yizhewang/Downloads/fis.pac",
+		"/Users/yizhewang/Sites/payment/js/modules/welcome/controllers.js",
+		"/Users/yizhewang/Sites/payment/index.html",
+		"/Users/yizhewang/Sites/payment_terminal/.gitignore",
+		"/Users/yizhewang/Sites/payment_terminal/apps/setup/js/controllers.js",
+		"/Users/yizhewang/Sites/payment_terminal/views/index.html",
+		"/Users/yizhewang/Sites/payment_terminal/js/controllers/index.js",
+		"/Users/yizhewang/Sites/payment_terminal/index.html"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"toBeTruthy",
+			"		'",
+			"' +\n",
+			"' +",
+			"\" ",
+			"= \"",
+			"' +\n",
+			"		'",
+			"\\\"",
+			"' +",
+			"		'",
+			"p",
+			"br",
+			"convertSlugToTitle($scope.slug, '')",
+			"duplicated",
+			"null",
+			"[i]",
+			"obstacleGrid",
+			"dynamic programming",
+			"category",
+			"] },",
+			"{ title",
+			", category",
+			", difficulty",
+			"},",
+			"{slug",
+			"{title",
+			"pre",
+			";\n",
+			"Leetcode_JavaScript",
+			", SharedPropertyService",
+			"default",
+			"navtab",
+			"btn-default",
+			"btn",
+			"answers",
+			"2",
+			");\n",
+			"Problems",
+			"obj",
+			"all",
+			"allProblems",
+			"dl",
+			"shortName",
+			">",
+			"<",
+			"problemList",
+			"fileName",
+			"convertTitleToLowerCase",
+			"source_code",
+			");\n",
+			"setProperty",
+			"getProperty",
+			"Property",
+			"property",
+			"sharedPropertiesService",
+			"data",
+			"problemCtrl",
+			"h3",
+			"item"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"\"</code> ",
+			"= <code class=\"mark\">\"",
+			"",
+			"\"",
+			"",
+			"'",
+			"]\n	},",
+			"{\n		title",
+			",\n		category",
+			",\n		difficulty",
+			",\ndifficulty",
+			" },",
+			"{ slug",
+			"{ title",
+			"Leetcode",
+			"&gt;",
+			"&lt;",
+			"h4"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "cheatsheets.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"isom",
+				"assets/solutions/javascript/isomorphic-strings.js"
+			],
+			[
+				"is",
+				"assets/solutions/javascript/isomorphic-strings.js"
+			],
+			[
+				"spec-is",
+				"tests\\spec-isomorphic-strings.js"
+			],
+			[
+				"contail",
+				"assets\\solutions\\javascript\\contains-duplicate.js"
+			],
+			[
+				"unique",
+				"assets\\solutions\\javascript\\unique-paths.js"
+			],
+			[
+				"pro",
+				"assets\\questions\\problemList.js"
+			],
+			[
+				"problemd",
+				"assets\\questions\\problemDescriptions.js"
+			],
+			[
+				"uniq",
+				"assets\\solutions\\javascript\\unique-paths.js"
+			],
+			[
+				"spec-ma",
+				"tests\\spec-majority-element.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 160.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
