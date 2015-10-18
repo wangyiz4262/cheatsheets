@@ -1,0 +1,2049 @@
+<!DOCTYPE html>
+<!-- saved from url=(0124)file:///Users/Yizhe/Library/Application%20Support/Dash/Cheat%20Sheets/Vim/Vim.docset/Contents/Resources/Documents/index.html -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Vim</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="file://dash_ref/Category/How%20to%20Exit/1">
+    <link href="file://dash_ref_how%20to%20exit/Entry/Quit%20Vim/0">
+    <link href="file://dash_ref_how%20to%20exit/Entry/Quit%20without%20writing/0">
+    <link href="file://dash_ref_how%20to%20exit/Entry/Quit%20always,%20without%20writing/0">
+    <link href="file://dash_ref_how%20to%20exit/Entry/Write%20the%20current%20file%20and%20exit/0">
+    <link href="file://dash_ref_how%20to%20exit/Entry/Write%20the%20current%20file%20and%20exit%20always/0">
+    <link href="file://dash_ref_how%20to%20exit/Entry/Write%20to%20%7Bfile%7D.%20Exit%20if%20not%20editing%20the%20last/0">
+    <link href="file://dash_ref_how%20to%20exit/Entry/Write%20to%20%7Bfile%7D%20and%20exit%20always/0">
+    <link href="file://dash_ref_how%20to%20exit/Entry/Write%20the%20lines%20in%20[range]%20and%20exit%20always/0">
+    <link href="file://dash_ref_how%20to%20exit/Entry/Write%20current%20file,%20if%20modified,%20and%20exit/0">
+    <link href="file://dash_ref_how%20to%20exit/Entry/Quit%20current%20file%20and%20exit/0">
+    <link href="file://dash_ref/Category/Editing%20a%20File/1">
+    <link href="file://dash_ref_editing%20a%20file/Entry/Edit%20the%20current%20file/0">
+    <link href="file://dash_ref_editing%20a%20file/Entry/Edit%20the%20current%20file%20always/0">
+    <link href="file://dash_ref_editing%20a%20file/Entry/Edit%20%7Bfile%7D/0">
+    <link href="file://dash_ref_editing%20a%20file/Entry/Edit%20%7Bfile%7D%20always/0">
+    <link href="file://dash_ref_editing%20a%20file/Entry/Edit%20the%20file%20whose%20name%20is%20under%20or%20after%20the%20cursor/0">
+    <link href="file://dash_ref/Category/Inserting%20Text/1">
+    <link href="file://dash_ref_inserting%20text/Entry/Append%20text%20after%20the%20cursor%20[count]%20times/0">
+    <link href="file://dash_ref_inserting%20text/Entry/Append%20text%20at%20the%20end%20of%20the%20line%20[count]%20times/0">
+    <link href="file://dash_ref_inserting%20text/Entry/Insert%20text%20before%20the%20cursor%20[count]%20times/0">
+    <link href="file://dash_ref_inserting%20text/Entry/Insert%20text%20before%20the%20first%20non-blank%20in%20the%20line%20[count]%20times/0">
+    <link href="file://dash_ref_inserting%20text/Entry/Insert%20text%20in%20column%201%20[count]%20times/0">
+    <link href="file://dash_ref_inserting%20text/Entry/Begin%20a%20new%20line%20below%20the%20cursor%20and%20insert%20text,%20repeat%20[count]%20times/0">
+    <link href="file://dash_ref_inserting%20text/Entry/Begin%20a%20new%20line%20above%20the%20cursor%20and%20insert%20text,%20repeat%20[count]%20times/0">
+    <link href="file://dash_ref/Category/Inserting%20a%20File/1">
+    <link href="file://dash_ref_inserting%20a%20file/Entry/Insert%20the%20file%20[name]%20below%20the%20cursor/0">
+    <link href="file://dash_ref_inserting%20a%20file/Entry/Execute%20%7Bcmd%7D%20and%20insert%20its%20standard%20output%20below%20the%20cursor/0">
+    <link href="file://dash_ref/Category/Deleting%20Text/1">
+    <link href="file://dash_ref_deleting%20text/Entry/Delete%20[count]%20characters%20under%20and%20after%20the%20cursor/0">
+    <link href="file://dash_ref_deleting%20text/Entry/Delete%20[count]%20characters%20before%20the%20cursor/0">
+    <link href="file://dash_ref_deleting%20text/Entry/Delete%20text%20that%20%7Bmotion%7D%20moves%20over/0">
+    <link href="file://dash_ref_deleting%20text/Entry/Delete%20[count]%20lines/0">
+    <link href="file://dash_ref_deleting%20text/Entry/Delete%20the%20characters%20under%20the%20cursor%20until%20the%20end%20of%20the%20line/0">
+    <link href="file://dash_ref_deleting%20text/Entry/Delete%20the%20highlighted%20text/0">
+    <link href="file://dash_ref_deleting%20text/Entry/Delete%20the%20highlighted%20text%20when%20in%20Select%20mode/0">
+    <link href="file://dash_ref_deleting%20text/Entry/Delete%20the%20highlighted%20lines/0">
+    <link href="file://dash_ref_deleting%20text/Entry/Delete%20[range]%20lines/0">
+    <link href="file://dash_ref_deleting%20text/Entry/Delete%20%7Bcount%7D%20lines,%20starting%20with%20[range]/0">
+    <link href="file://dash_ref/Category/Changing%20%2F%20Replacing%20Text/1">
+    <link href="file://dash_ref_changing%20%2F%20replacing%20text/Entry/Replace%20the%20character%20under%20the%20cursor%20with%20%7Bchar%7D/0">
+    <link href="file://dash_ref_changing%20%2F%20replacing%20text/Entry/Enter%20Insert%20mode,%20replacing%20characters%20rather%20than%20inserting/0">
+    <link href="file://dash_ref_changing%20%2F%20replacing%20text/Entry/Switch%20case%20of%20the%20character%20under%20the%20cursor%20and%20move%20the%20cursor%20to%20the%20right/0">
+    <link href="file://dash_ref_changing%20%2F%20replacing%20text/Entry/Switch%20case%20of%20%7Bmotion%7D%20text/0">
+    <link href="file://dash_ref_changing%20%2F%20replacing%20text/Entry/Switch%20case%20of%20highlighted%20text/0">
+    <link href="file://dash_ref/Category/Ranges/1">
+    <link href="file://dash_ref/Entry/Ranges/0">
+    <link href="file://dash_ref/Category/Substituting/1">
+    <link href="file://dash_ref_substituting/Entry/For%20each%20line%20in%20[range]%20replace%20a%20match%20of%20%7Bpattern%7D%20with%20%7Bstring%7D/0">
+    <link href="file://dash_ref_substituting/Entry/Repeat%20last%20:substitute%20with%20same%20search%20pattern%20and%20substitute%20string,%20but%20without%20the%20same%20flags/0">
+    <link href="file://dash_ref/Category/Copying%20and%20Moving%20Text/1">
+    <link href="file://dash_ref_copying%20and%20moving%20text/Entry/Use%20register%20%7Ba-zA-Z0-9.%#:-"} for next delete, yank or put/0">
+    <link href="file://dash_ref_copying%20and%20moving%20text/Entry/Display%20the%20contents%20of%20all%20numbered%20and%20named%20registers/0">
+    <link href="file://dash_ref_copying%20and%20moving%20text/Entry/Display%20the%20contents%20of%20the%20numbered%20and%20named%20registers%20that%20are%20mentioned%20in%20%7Barg%7D/0">
+    <link href="file://dash_ref_copying%20and%20moving%20text/Entry/Yank%20%7Bmotion%7D%20text%20[into%20register%20x]/0">
+    <link href="file://dash_ref_copying%20and%20moving%20text/Entry/Yank%20[count]%20lines%20[into%20register%20x]/0">
+    <link href="file://dash_ref_copying%20and%20moving%20text/Entry/Yank%20the%20highlighted%20text%20[into%20register%20x]/0">
+    <link href="file://dash_ref_copying%20and%20moving%20text/Entry/Yank%20the%20highlighted%20lines%20[into%20register%20x]/0">
+    <link href="file://dash_ref_copying%20and%20moving%20text/Entry/Yank%20[range]%20lines%20[into%20register%20x]/0">
+    <link href="file://dash_ref_copying%20and%20moving%20text/Entry/Yank%20%7Bcount%7D%20lines,%20starting%20with%20last%20line%20number%20in%20[range],%20[into%20register%20x]/0">
+    <link href="file://dash_ref_copying%20and%20moving%20text/Entry/Put%20the%20text%20[from%20register%20x]%20after%20the%20cursor%20[count]%20times/0">
+    <link href="file://dash_ref_copying%20and%20moving%20text/Entry/Put%20the%20text%20[from%20register%20x]%20before%20the%20cursor%20[count]%20times/0">
+    <link href="file://dash_ref_copying%20and%20moving%20text/Entry/Just%20like%20p,%20but%20leave%20the%20cursor%20just%20after%20the%20new%20text/0">
+    <link href="file://dash_ref_copying%20and%20moving%20text/Entry/Just%20like%20P,%20but%20leave%20the%20cursor%20just%20after%20the%20new%20text/0">
+    <link href="file://dash_ref_copying%20and%20moving%20text/Entry/Put%20the%20text%20[from%20register%20x]%20after%20[line]/0">
+    <link href="file://dash_ref_copying%20and%20moving%20text/Entry/Put%20the%20text%20[from%20register%20x]%20before%20[line]/0">
+    <link href="file://dash_ref/Category/Undo,%20Redo%20and%20Repeat/1">
+    <link href="file://dash_ref_undo%2C%20redo%20and%20repeat/Entry/Undo%20[count]%20changes/0">
+    <link href="file://dash_ref_undo%2C%20redo%20and%20repeat/Entry/Undo%20one%20change/0">
+    <link href="file://dash_ref_undo%2C%20redo%20and%20repeat/Entry/Redo%20[count]%20changes%20which%20were%20undone/0">
+    <link href="file://dash_ref_undo%2C%20redo%20and%20repeat/Entry/Redo%20one%20change%20which%20was%20undone/0">
+    <link href="file://dash_ref_undo%2C%20redo%20and%20repeat/Entry/Undo%20all%20latest%20changes%20on%20one%20line.%20%7BVi:%20while%20not%20moved%20off%20of%20it%7D/0">
+    <link href="file://dash_ref_undo%2C%20redo%20and%20repeat/Entry/Repeat%20last%20change,%20with%20count%20replaced%20with%20[count]/0">
+    <link href="file://dash_ref/Category/Moving%20Around/1">
+    <link href="file://dash_ref_moving%20around/Entry/Basic%20motion%20commands/0">
+    <link href="file://dash_ref_moving%20around/Entry/[count]%20characters%20to%20the%20left%20(exclusive)/0">
+    <link href="file://dash_ref_moving%20around/Entry/[count]%20characters%20to%20the%20right%20(exclusive)/0">
+    <link href="file://dash_ref_moving%20around/Entry/[count]%20lines%20upward/0">
+    <link href="file://dash_ref_moving%20around/Entry/[count]%20lines%20downward%20(linewise)/0">
+    <link href="file://dash_ref_moving%20around/Entry/To%20the%20first%20character%20of%20the%20line%20(exclusive)/0">
+    <link href="file://dash_ref_moving%20around/Entry/To%20the%20first%20non-blank%20character%20of%20the%20line/0">
+    <link href="file://dash_ref_moving%20around/Entry/To%20the%20end%20of%20the%20line%20and%20[count%20-%201]%20lines%20downward/0">
+    <link href="file://dash_ref_moving%20around/Entry/To%20the%20first%20character%20of%20the%20screen%20line%20(exclusive)%20when%20lines%20wrap%20('wrap%20on).%20Differs%20from%200%20when%20a%20line%20is%20wider%20than%20the%20screen%20%20%20To%20the%20leftmost%20character%20of%20the%20current%20line%20that%20is%20on%20the%20screen%20when%20lines%20don't%20wrap%20('wrap'%20off).%20Differs%20from%200%20when%20the%20first%20character%20of%20the%20line%20is%20not%20on%20the%20screen/0">
+    <link href="file://dash_ref_moving%20around/Entry/To%20the%20first%20non-blank%20character%20of%20the%20screen%20line%20(exclusive)%20when%20lines%20wrap%20('wrap'%20on).%20Differs%20from%20%5E%20when%20a%20line%20is%20wider%20than%20the%20screen.%20%20%20%20To%20the%20leftmost%20non-blank%20character%20of%20the%20current%20line%20that%20is%20on%20the%20screen%20when%20lines%20don't%20wrap%20('wrap'%20off).%20Differs%20from%20%5E%20when%20the%20first%20non-blank%20character%20of%20the%20line%20is%20not%20on%20the%20screen/0">
+    <link href="file://dash_ref_moving%20around/Entry/To%20the%20last%20character%20of%20the%20screen%20line%20and%20[count%20-%201]%20screen%20lines%20downward%20(inclusive)%20when%20lines%20wrap%20('wrap'%20on).%20Differs%20from%20$%20when%20a%20line%20is%20wider%20than%20the%20screen.%20%20%20%20To%20the%20rightmost%20character%20of%20the%20current%20line%20that%20is%20visible%20on%20the%20screen%20when%20lines%20don't%20wrap%20('wrap'%20off).%20Differs%20from%20$%20when%20the%20last%20character%20of%20the%20line%20is%20not%20on%20the%20screen%20or%20when%20a%20count%20is%20used/0">
+    <link href="file://dash_ref_moving%20around/Entry/To%20[count]'th%20occurrence%20of%20%7Bchar%7D%20to%20the%20right.%20The%20cursor%20is%20placed%20on%20%7Bchar%7D%20(inclusive)/0">
+    <link href="file://dash_ref_moving%20around/Entry/To%20the%20[count]'th%20occurrence%20of%20%7Bchar%7D%20to%20the%20left.%20The%20cursor%20is%20placed%20on%20%7Bchar%7D%20(inclusive)/0">
+    <link href="file://dash_ref_moving%20around/Entry/Till%20before%20[count]'th%20occurrence%20of%20%7Bchar%7D%20to%20the%20right.%20The%20cursor%20is%20placed%20on%20the%20character%20left%20of%20%7Bchar%7D%20(inclusive)/0">
+    <link href="file://dash_ref_moving%20around/Entry/Till%20after%20[count]'th%20occurrence%20of%20%7Bchar%7D%20to%20the%20left.%20The%20cursor%20is%20placed%20on%20the%20character%20right%20of%20%7Bchar%7D%20(inclusive)/0">
+    <link href="file://dash_ref_moving%20around/Entry/Repeat%20latest%20f,%20t,%20F%20or%20T%20[count]%20times/0">
+    <link href="file://dash_ref_moving%20around/Entry/Repeat%20latest%20f,%20t,%20F%20or%20T%20in%20opposite%20direction%20[count]%20times/0">
+    <link href="file://dash_ref_moving%20around/Entry/[count]%20lines%20upward,%20on%20the%20first%20non-blank%20character%20(linewise)/0">
+    <link href="file://dash_ref_moving%20around/Entry/[count]%20lines%20downward,%20on%20the%20first%20non-blank%20character%20(linewise)/0">
+    <link href="file://dash_ref_moving%20around/Entry/[count]%20-%201%20lines%20downward,%20on%20the%20first%20non-blank%20character%20(linewise)/0">
+    <link href="file://dash_ref_moving%20around/Entry/Goto%20line%20[count]%20on%20the%20first%20non-blank%20character/0">
+    <link href="file://dash_ref_moving%20around/Entry/Goto%20line%20[count]%20on%20the%20first%20non-blank%20character/0">
+    <link href="file://dash_ref_moving%20around/Entry/[count]%20words%20forward/0">
+    <link href="file://dash_ref_moving%20around/Entry/[count]%20WORDS%20forward/0">
+    <link href="file://dash_ref_moving%20around/Entry/Forward%20to%20the%20end%20of%20word%20[count]/0">
+    <link href="file://dash_ref_moving%20around/Entry/Forward%20to%20the%20end%20of%20WORD%20[count]/0">
+    <link href="file://dash_ref_moving%20around/Entry/[count]%20words%20backward/0">
+    <link href="file://dash_ref_moving%20around/Entry/[count]%20WORDS%20backward/0">
+    <link href="file://dash_ref_moving%20around/Entry/Backward%20to%20the%20end%20of%20word%20[count]/0">
+    <link href="file://dash_ref_moving%20around/Entry/Backward%20to%20the%20end%20of%20WORD%20[count]/0">
+    <link href="file://dash_ref_moving%20around/Entry/[count]%20sentences%20backward/0">
+    <link href="file://dash_ref_moving%20around/Entry/[count]%20sentences%20forward/0">
+    <link href="file://dash_ref_moving%20around/Entry/[count]%20paragraphs%20backward/0">
+    <link href="file://dash_ref_moving%20around/Entry/[count]%20paragraphs%20forward/0">
+    <link href="file://dash_ref_moving%20around/Entry/[count]%20sections%20forward%20or%20to%20the%20next%20'%7B'%20in%20the%20first%20column/0">
+    <link href="file://dash_ref_moving%20around/Entry/[count]%20sections%20forward%20or%20to%20the%20next%20'%7D'%20in%20the%20first%20column/0">
+    <link href="file://dash_ref_moving%20around/Entry/[count]%20sections%20backward%20or%20to%20the%20previous%20'%7B'%20in%20the%20first%20column/0">
+    <link href="file://dash_ref_moving%20around/Entry/[count]%20sections%20backward%20or%20to%20the%20previous%20'%7D'%20in%20the%20first%20column/0">
+    <link href="file://dash_ref/Category/Marks/1">
+    <link href="file://dash_ref_marks/Entry/Set%20mark%20%7Ba-zA-Z%7D%20at%20cursor%20position/0">
+    <link href="file://dash_ref_marks/Entry/Set%20the%20previous%20context%20mark/0">
+    <link href="file://dash_ref_marks/Entry/Set%20mark%20%7Ba-zA-Z%7D%20at%20last%20line%20number%20in%20[range],%20column%200/0">
+    <link href="file://dash_ref_marks/Entry/To%20the%20first%20non-blank%20character%20on%20the%20line%20with%20mark%20%7Ba-z%7D%20(linewise)/0">
+    <link href="file://dash_ref_marks/Entry/To%20the%20first%20non-blank%20character%20on%20the%20line%20with%20mark%20%7BA-Z0-9%7D%20in%20the%20correct%20file/0">
+    <link href="file://dash_ref_marks/Entry/To%20the%20mark%20%7Ba-z%7D/0">
+    <link href="file://dash_ref_marks/Entry/To%20the%20mark%20%7BA-Z0-9%7D%20in%20the%20correct%20file/0">
+    <link href="file://dash_ref_marks/Entry/List%20all%20the%20current%20marks%20(not%20a%20motion%20command)/0">
+    <link href="file://dash_ref_marks/Entry/List%20the%20marks%20that%20are%20mentioned%20in%20%7Barg%7D%20(not%20a%20motion%20command).%20For%20example:/0">
+    <link href="file://dash_ref/Category/Searching/1">
+    <link href="file://dash_ref_searching/Entry/Search%20forward%20for%20the%20[count]'th%20occurrence%20of%20%7Bpattern%7D/0">
+    <link href="file://dash_ref_searching/Entry/Search%20forward%20for%20the%20[count]'th%20occurrence%20of%20%7Bpattern%7D%20and%20go%20%7Boffset%7D%20lines%20up%20or%20down/0">
+    <link href="file://dash_ref_searching/Entry/Search%20forward%20for%20the%20[count]'th%20latest%20used%20pattern/0">
+    <link href="file://dash_ref_searching/Entry/Search%20forward%20for%20the%20[count]'th%20latest%20used%20pattern%20with%20new/0">
+    <link href="file://dash_ref_searching/Entry/Search%20backward%20for%20the%20[count]'th%20previous%20occurrence%20of%20%7Bpattern%7D/0">
+    <link href="file://dash_ref_searching/Entry/Search%20backward%20for%20the%20[count]'th%20previous%20occurrence%20of%20%7Bpattern%7D%20and%20go%20%7Boffset%7D%20lines%20up%20or%20down/0">
+    <link href="file://dash_ref_searching/Entry/Search%20backward%20for%20the%20[count]'th%20latest%20used%20pattern/0">
+    <link href="file://dash_ref_searching/Entry/Search%20backward%20for%20the%20[count]'th%20latest%20used%20pattern%20with%20new%20%7Boffset%7D/0">
+    <link href="file://dash_ref_searching/Entry/Repeat%20the%20latest%20%2F%20or%20?%20[count]%20times/0">
+    <link href="file://dash_ref_searching/Entry/Repeat%20the%20latest%20%2F%20or%20?%20[count]%20times%20in%20opposite%20direction/0">
+    <link href="file://dash_ref/Category/Selecting%20Text%20(Visual%20Mode)/1">
+    <link href="file://dash_ref_selecting%20text%20%28visual%20mode%29/Entry/Start%20Visual%20mode%20per%20character/0">
+    <link href="file://dash_ref_selecting%20text%20%28visual%20mode%29/Entry/Start%20Visual%20mode%20linewise%20(horizontal%20selection)/0">
+    <link href="file://dash_ref_selecting%20text%20%28visual%20mode%29/Entry/Start%20Visual%20mode%20columnwise%20(vertical%20selection)/0">
+    <link href="file://dash_ref_selecting%20text%20%28visual%20mode%29/Entry/Exit%20Visual%20mode%20without%20making%20any%20changes/0">
+    <link href="file://dash_ref/Category/How%20to%20Suspend/1">
+    <link href="file://dash_ref_how%20to%20suspend/Entry/Suspend%20Vim/0">
+    <link href="file://dash_ref_how%20to%20suspend/Entry/Suspend%20Vim!/0">
+    <link href="file://dash_ref/Category/Multiple%20Windows/1">
+    <link href="file://dash_ref_multiple%20windows/Entry/Edit%20another%20file/0">
+    <link href="file://dash_ref_multiple%20windows/Entry/Split%20window%20and%20load%20another%20file/0">
+    <link href="file://dash_ref_multiple%20windows/Entry/Vertical%20split%20current%20window/0">
+    <link href="file://dash_ref_multiple%20windows/Entry/Horizontal%20split%20current%20window/0">
+    <link href="file://dash_ref_multiple%20windows/Entry/Move%20cursor%20up%20a%20window/0">
+    <link href="file://dash_ref_multiple%20windows/Entry/Move%20cursor%20to%20another%20window%20(cycle)/0">
+    <link href="file://dash_ref_multiple%20windows/Entry/Maximize%20current%20window/0">
+    <link href="file://dash_ref_multiple%20windows/Entry/Make%20all%20equal%20size/0">
+    <link href="file://dash_ref_multiple%20windows/Entry/Increase%20window%20size%20by%2010%20lines/0">
+    <link href="file://dash_ref_multiple%20windows/Entry/Vertical%20split/0">
+    <link href="file://dash_ref_multiple%20windows/Entry/Same%20as%20split,%20but%20readonly/0">
+    <link href="file://dash_ref_multiple%20windows/Entry/Close%20current%20window/0">
+    <link href="file://dash_ref_multiple%20windows/Entry/Keep%20only%20this%20window%20open/0">
+    <link href="file://dash_ref_multiple%20windows/Entry/Show%20current%20buffers/0">
+    <link href="file://dash_ref_multiple%20windows/Entry/Open%20buffer%20#2 in this window/0">
+  </head>
+  <body>
+    <header>
+      <a href="../index.html" id="return"><button class="btn">Return</button></a>
+      <h1>Vim</h1>
+    </header>
+    <article>
+      <p></p>
+      <section class="category">
+        <h2 id="//dash_ref/Category/How to Exit/1">
+          How to Exit
+        </h2>
+        <div class="scrollable">
+          <table>
+            <tbody><tr id="//dash_ref_How to Exit/Entry/Quit Vim/0">
+              <td class="command">
+                <p>
+                  <code>:q[uit]</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Quit Vim</p></div>
+                <div class="notes"><p>This fails when changes have been made</p></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_How to Exit/Entry/Quit without writing/0">
+              <td class="command">
+                <p>
+                  <code>:q[uit]!</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Quit without writing</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_How to Exit/Entry/Quit always, without writing/0">
+              <td class="command">
+                <p>
+                  <code>:cq[uit]</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Quit always, without writing</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_How to Exit/Entry/Write the current file and exit/0">
+              <td class="command">
+                <p>
+                  <code>:wq</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Write the current file and exit</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_How to Exit/Entry/Write the current file and exit always/0">
+              <td class="command">
+                <p>
+                  <code>:wq!</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Write the current file and exit always</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_How to Exit/Entry/Write to {file}. Exit if not editing the last/0">
+              <td class="command">
+                <p>
+                  <code>:wq {file}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Write to {file}. Exit if not editing the last</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_How to Exit/Entry/Write to {file} and exit always/0">
+              <td class="command">
+                <p>
+                  <code>:wq! {file}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Write to {file} and exit always</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_How to Exit/Entry/Write the lines in [range] and exit always/0">
+              <td class="command">
+                <p>
+                  <code>:[range]wq[!]</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Write the lines in [range] and exit always</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_How to Exit/Entry/Write current file, if modified, and exit/0">
+              <td class="command">
+                <p>
+                  <code>ZZ</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Write current file, if modified, and exit</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_How to Exit/Entry/Quit current file and exit/0">
+              <td class="command">
+                <p>
+                  <code>ZQ</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Quit current file and exit</p></div>
+                <div class="notes"><p>Same as <code>:q!</code></p></div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </section>
+      <section class="category">
+        <h2 id="//dash_ref/Category/Editing a File/1">
+          Editing a File
+        </h2>
+        <div class="scrollable">
+          <table>
+            <tbody><tr id="//dash_ref_Editing a File/Entry/Edit the current file/0">
+              <td class="command">
+                <p>
+                  <code>:e[dit]</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Edit the current file</p></div>
+                <div class="notes"><p>This is useful to re-edit the current file, when it has been changed outside of Vim</p></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Editing a File/Entry/Edit the current file always/0">
+              <td class="command">
+                <p>
+                  <code>:e[dit]!</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Edit the current file always</p></div>
+                <div class="notes"><p>Discard any changes to the current buffer. This is useful if you want to start all over again</p></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Editing a File/Entry/Edit {file}/0">
+              <td class="command">
+                <p>
+                  <code>:e[dit] {file}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Edit {file}</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Editing a File/Entry/Edit {file} always/0">
+              <td class="command">
+                <p>
+                  <code>:e[dit]! {file}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Edit {file} always</p></div>
+                <div class="notes"><p>Discard any changes to the current buffer</p></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Editing a File/Entry/Edit the file whose name is under or after the cursor/0">
+              <td class="command">
+                <p>
+                  <code>gf</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Edit the file whose name is under or after the cursor</p></div>
+                <div class="notes"><p>Mnemonic: <code>goto file</code></p></div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </section>
+      <section class="category">
+        <h2 id="//dash_ref/Category/Inserting Text/1">
+          Inserting Text
+        </h2>
+        <div class="scrollable">
+          <table>
+            <tbody><tr id="//dash_ref_Inserting Text/Entry/Append text after the cursor [count] times/0">
+              <td class="command">
+                <p>
+                  <code>a</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Append text after the cursor [count] times</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Inserting Text/Entry/Append text at the end of the line [count] times/0">
+              <td class="command">
+                <p>
+                  <code>A</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Append text at the end of the line [count] times</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Inserting Text/Entry/Insert text before the cursor [count] times/0">
+              <td class="command">
+                <p>
+                  <code>i</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Insert text before the cursor [count] times</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Inserting Text/Entry/Insert text before the first non-blank in the line [count] times/0">
+              <td class="command">
+                <p>
+                  <code>I</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Insert text before the first non-blank in the line [count] times</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Inserting Text/Entry/Insert text in column 1 [count] times/0">
+              <td class="command">
+                <p>
+                  <code>gI</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Insert text in column 1 [count] times</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Inserting Text/Entry/Begin a new line below the cursor and insert text, repeat [count] times/0">
+              <td class="command">
+                <p>
+                  <code>o</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Begin a new line below the cursor and insert text, repeat [count] times</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Inserting Text/Entry/Begin a new line above the cursor and insert text, repeat [count] times/0">
+              <td class="command">
+                <p>
+                  <code>O</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Begin a new line above the cursor and insert text, repeat [count] times</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </section>
+      <section class="category">
+        <h2 id="//dash_ref/Category/Inserting a File/1">
+          Inserting a File
+        </h2>
+        <div class="scrollable">
+          <table>
+            <tbody><tr id="//dash_ref_Inserting a File/Entry/Insert the file [name] below the cursor/0">
+              <td class="command">
+                <p>
+                  <code>:r[ead] [name]</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Insert the file [name] below the cursor</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Inserting a File/Entry/Execute {cmd} and insert its standard output below the cursor/0">
+              <td class="command">
+                <p>
+                  <code>:r[ead] !{cmd}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Execute {cmd} and insert its standard output below the cursor</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </section>
+      <section class="category">
+        <h2 id="//dash_ref/Category/Deleting Text/1">
+          Deleting Text
+        </h2>
+        <div class="scrollable">
+          <table>
+            <tbody><tr id="//dash_ref_Deleting Text/Entry/Delete [count] characters under and after the cursor/0">
+              <td class="command">
+                <p>
+                  <code>&lt;Del&gt;</code>
+                </p>
+                <p>
+                  <code>x</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Delete [count] characters under and after the cursor</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Deleting Text/Entry/Delete [count] characters before the cursor/0">
+              <td class="command">
+                <p>
+                  <code>X</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Delete [count] characters before the cursor</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Deleting Text/Entry/Delete text that {motion} moves over/0">
+              <td class="command">
+                <p>
+                  <code>d{motion}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Delete text that {motion} moves over</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Deleting Text/Entry/Delete [count] lines/0">
+              <td class="command">
+                <p>
+                  <code>dd</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Delete [count] lines</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Deleting Text/Entry/Delete the characters under the cursor until the end of the line/0">
+              <td class="command">
+                <p>
+                  <code>D</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Delete the characters under the cursor until the end of the line</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Deleting Text/Entry/Delete the highlighted text/0">
+              <td class="command">
+                <p>
+                  <code>{Visual}x</code>
+                </p>
+                <p>
+                  <code>{Visual}d</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Delete the highlighted text</p></div>
+                <div class="notes"><p>For {Visual} see Selecting Text</p></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Deleting Text/Entry/Delete the highlighted text when in Select mode/0">
+              <td class="command">
+                <p>
+                  <code>{Visual}CTRL-H</code>
+                </p>
+                <p>
+                  <code>{Visual}&lt;BS&gt;</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Delete the highlighted text when in Select mode</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Deleting Text/Entry/Delete the highlighted lines/0">
+              <td class="command">
+                <p>
+                  <code>{Visual}X</code>
+                </p>
+                <p>
+                  <code>{Visual}D</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Delete the highlighted lines</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Deleting Text/Entry/Delete [range] lines/0">
+              <td class="command">
+                <p>
+                  <code>:[range]d[elete]</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Delete [range] lines</p></div>
+                <div class="notes"><p>Default: current line</p></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Deleting Text/Entry/Delete {count} lines, starting with [range]/0">
+              <td class="command">
+                <p>
+                  <code>:[range]d[elete] {count}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Delete {count} lines, starting with [range]</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </section>
+      <section class="category">
+        <h2 id="//dash_ref/Category/Changing %2F Replacing Text/1">
+          Changing / Replacing Text
+        </h2>
+        <div class="scrollable">
+          <table>
+            <tbody><tr id="//dash_ref_Changing %2F Replacing Text/Entry/Replace the character under the cursor with {char}/0">
+              <td class="command">
+                <p>
+                  <code>r{char}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Replace the character under the cursor with {char}</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Changing %2F Replacing Text/Entry/Enter Insert mode, replacing characters rather than inserting/0">
+              <td class="command">
+                <p>
+                  <code>R</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Enter Insert mode, replacing characters rather than inserting</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Changing %2F Replacing Text/Entry/Switch case of the character under the cursor and move the cursor to the right/0">
+              <td class="command">
+                <p>
+                  <code>~</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Switch case of the character under the cursor and move the cursor to the right</p></div>
+                <div class="notes"><p>If a [count] is given, do that many characters</p></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Changing %2F Replacing Text/Entry/Switch case of {motion} text/0">
+              <td class="command">
+                <p>
+                  <code>~{motion}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Switch case of {motion} text</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Changing %2F Replacing Text/Entry/Switch case of highlighted text/0">
+              <td class="command">
+                <p>
+                  <code>{Visual}~</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Switch case of highlighted text</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </section>
+      <section class="category">
+        <a name="//dash_ref/Entry/Ranges/0"></a>
+        <h2 id="//dash_ref/Category/Ranges/1">
+          Ranges
+        </h2>
+        <div class="scrollable">
+          <table>
+            <tbody><tr>
+              <td class="description" colspan="2">
+                <div class="name"></div>
+                <div class="notes">
+                  <p>A range permits a command to be applied to a group of lines in the current buffer.
+                  For most commands, the default range is the current line.</p>
+                  
+                  <ul>
+                  <li><code>:21s/old/new/g</code> - Line 21</li>
+                  <li><code>:1s/old/new/g</code> - First line</li>
+                  <li><code>:$s/old/new/g</code> - Last line</li>
+                  <li><code>:%s/old/new/g</code> - All lines</li>
+                  <li><code>:.,$s/old/new/g</code> - Current line to end</li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </section>
+      <section class="category">
+        <h2 id="//dash_ref/Category/Substituting/1">
+          Substituting
+        </h2>
+        <div class="scrollable">
+          <table>
+            <tbody><tr id="//dash_ref_Substituting/Entry/For each line in [range] replace a match of {pattern} with {string}/0">
+              <td class="description" colspan="2">
+                <div class="name"><p>For each line in [range] replace a match of {pattern} with {string}</p></div>
+                <div class="notes"><pre class="highlight plaintext">:[range]s[ubstitute]/{pattern}/{string}/[c][e][g][p][r][i][I] [count]</pre></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Substituting/Entry/Repeat last :substitute with same search pattern and substitute string, but without the same flags/0">
+              <td class="description" colspan="2">
+                <div class="name"><p>Repeat last :substitute with same search pattern and substitute string, but without the same flags</p></div>
+                <div class="notes">
+                  <pre class="highlight plaintext">:[range]s[ubstitute] [c][e][g][r][i][I] [count] :[range]&amp;[c][e][g][r][i][I] [count]</pre>
+                  
+                  <p>You may add extra flags</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="description" colspan="2">
+                <div class="name"></div>
+                <div class="notes">
+                  <p>The arguments that you can use for the substitute commands:</p>
+                  
+                  <ul>
+                  <li><p><code>[c]</code> Confirm each substitution. Vim positions the cursor on the matching string. You can type:</p>
+                  
+                  <ul>
+                  <li><code>y</code>      to substitute this match</li>
+                  <li><code>n</code>      to skip this match</li>
+                  <li><code>&lt;Esc&gt;</code>   to skip this match</li>
+                  <li><code>a</code>      to substitute this and all remaining matches {not in Vi}</li>
+                  <li><code>q</code>      to quit substituting {not in Vi}</li>
+                  <li><code>CTRL-E</code>  to scroll the screen up {not in Vi}</li>
+                  <li><code>CTRL-Y</code>  to scroll the screen down {not in Vi}</li>
+                  </ul></li>
+                  <li><p><code>[e]</code> When the search pattern fails, do not issue an error message and, in particular, continue in maps as if no error occurred</p></li>
+                  <li><p><code>[g]</code>  Replace all occurrences in the line. Without this argument, replacement occurs only for the first occurrence in each line</p></li>
+                  <li><p><code>[i]</code>  Ignore case for the pattern</p></li>
+                  <li><p><code>[I]</code>  Don't ignore case for the pattern</p></li>
+                  <li><p><code>[p]</code>  Print the line containing the last substitute</p></li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </section>
+      <section class="category">
+        <h2 id="//dash_ref/Category/Copying and Moving Text/1">
+          Copying and Moving Text
+        </h2>
+        <div class="scrollable">
+          <table>
+            <tbody><tr id="//dash_ref_Copying and Moving Text/Entry/Use register {a-zA-Z0-9.%#:-&quot;} for next delete, yank or put/0">
+              <td class="command">
+                <p>
+                  <code>"{a-zA-Z0-9.%#:-"}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Use register {a-zA-Z0-9.%#:-"} for next delete, yank or put</p></div>
+                <div class="notes"><p>Use uppercase character to append with delete and yank. {.%#:} only work with put</p></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Copying and Moving Text/Entry/Display the contents of all numbered and named registers/0">
+              <td class="command">
+                <p>
+                  <code>:reg[isters]</code>
+                </p>
+                <p>
+                  <code>:di[splay]</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Display the contents of all numbered and named registers</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Copying and Moving Text/Entry/Display the contents of the numbered and named registers that are mentioned in {arg}/0">
+              <td class="command">
+                <p>
+                  <code>:reg[isters] {arg}</code>
+                </p>
+                <p>
+                  <code>:di[splay] [arg]</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Display the contents of the numbered and named registers that are mentioned in {arg}</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Copying and Moving Text/Entry/Yank {motion} text [into register x]/0">
+              <td class="command">
+                <p>
+                  <code>["x]y{motion}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Yank {motion} text [into register x]</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Copying and Moving Text/Entry/Yank [count] lines [into register x]/0">
+              <td class="command">
+                <p>
+                  <code>["x]yy</code>
+                </p>
+                <p>
+                  <code>["x]Y</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Yank [count] lines [into register x]</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Copying and Moving Text/Entry/Yank the highlighted text [into register x]/0">
+              <td class="command">
+                <p>
+                  <code>{Visual}["x]y</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Yank the highlighted text [into register x]</p></div>
+                <div class="notes"><p>For {Visual} see Selecting Text</p></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Copying and Moving Text/Entry/Yank the highlighted lines [into register x]/0">
+              <td class="command">
+                <p>
+                  <code>{Visual}["x]Y</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Yank the highlighted lines [into register x]</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Copying and Moving Text/Entry/Yank [range] lines [into register x]/0">
+              <td class="command">
+                <p>
+                  <code>:[range]y[ank] [x]</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Yank [range] lines [into register x]</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Copying and Moving Text/Entry/Yank {count} lines, starting with last line number in [range], [into register x]/0">
+              <td class="command">
+                <p>
+                  <code>:[range]y[ank] [x] {count}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Yank {count} lines, starting with last line number in [range], [into register x]</p></div>
+                <div class="notes"><p>Default: current line</p></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Copying and Moving Text/Entry/Put the text [from register x] after the cursor [count] times/0">
+              <td class="command">
+                <p>
+                  <code>["x]p</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Put the text [from register x] after the cursor [count] times</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Copying and Moving Text/Entry/Put the text [from register x] before the cursor [count] times/0">
+              <td class="command">
+                <p>
+                  <code>["x]P</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Put the text [from register x] before the cursor [count] times</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Copying and Moving Text/Entry/Just like p, but leave the cursor just after the new text/0">
+              <td class="command">
+                <p>
+                  <code>["x]gp</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Just like <code>p</code>, but leave the cursor just after the new text</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Copying and Moving Text/Entry/Just like P, but leave the cursor just after the new text/0">
+              <td class="command">
+                <p>
+                  <code>["x]gP</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Just like <code>P</code>, but leave the cursor just after the new text</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Copying and Moving Text/Entry/Put the text [from register x] after [line]/0">
+              <td class="command">
+                <p>
+                  <code>:[line]pu[t] [x]</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Put the text [from register x] after [line]</p></div>
+                <div class="notes"><p>Default: current line</p></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Copying and Moving Text/Entry/Put the text [from register x] before [line]/0">
+              <td class="command">
+                <p>
+                  <code>:[line]pu[t]! [x]</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Put the text [from register x] before [line]</p></div>
+                <div class="notes"><p>Default: current line</p></div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </section>
+      <section class="category">
+        <h2 id="//dash_ref/Category/Undo, Redo and Repeat/1">
+          Undo, Redo and Repeat
+        </h2>
+        <div class="scrollable">
+          <table>
+            <tbody><tr id="//dash_ref_Undo, Redo and Repeat/Entry/Undo [count] changes/0">
+              <td class="command">
+                <p>
+                  <code>u</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Undo [count] changes</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Undo, Redo and Repeat/Entry/Undo one change/0">
+              <td class="command">
+                <p>
+                  <code>:u[ndo]</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Undo one change</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Undo, Redo and Repeat/Entry/Redo [count] changes which were undone/0">
+              <td class="command">
+                <p>
+                  <code>CTRL-R</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Redo [count] changes which were undone</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Undo, Redo and Repeat/Entry/Redo one change which was undone/0">
+              <td class="command">
+                <p>
+                  <code>:red[o]</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Redo one change which was undone</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Undo, Redo and Repeat/Entry/Undo all latest changes on one line. {Vi: while not moved off of it}/0">
+              <td class="command">
+                <p>
+                  <code>U</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Undo all latest changes on one line. {Vi: while not moved off of it}</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Undo, Redo and Repeat/Entry/Repeat last change, with count replaced with [count]/0">
+              <td class="command">
+                <p>
+                  <code>.</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Repeat last change, with count replaced with [count]</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </section>
+      <section class="category">
+        <h2 id="//dash_ref/Category/Moving Around/1">
+          Moving Around
+        </h2>
+        <div class="scrollable">
+          <table>
+            <tbody><tr id="//dash_ref_Moving Around/Entry/Basic motion commands/0">
+              <td class="description" colspan="2">
+                <div class="name"><p>Basic motion commands</p></div>
+                <div class="notes"><pre class="highlight plaintext">  k              &lt;up&gt;
+h   l      &lt;left&gt;    &lt;right&gt;
+  j             &lt;down&gt;</pre></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/[count] characters to the left (exclusive)/0">
+              <td class="command">
+                <p>
+                  <code>h</code>
+                </p>
+                <p>
+                  <code>&lt;Left&gt;</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>[count] characters to the left (exclusive)</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/[count] characters to the right (exclusive)/0">
+              <td class="command">
+                <p>
+                  <code>l</code>
+                </p>
+                <p>
+                  <code>&lt;Right&gt;</code>
+                </p>
+                <p>
+                  <code>&lt;Space&gt;</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>[count] characters to the right (exclusive)</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/[count] lines upward/0">
+              <td class="command">
+                <p>
+                  <code>k</code>
+                </p>
+                <p>
+                  <code>&lt;Up&gt;</code>
+                </p>
+                <p>
+                  <code>CTRL-P</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>[count] lines upward</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/[count] lines downward (linewise)/0">
+              <td class="command">
+                <p>
+                  <code>j</code>
+                </p>
+                <p>
+                  <code>&lt;Down&gt;</code>
+                </p>
+                <p>
+                  <code>CTRL-J</code>
+                </p>
+                <p>
+                  <code>&lt;NL&gt;</code>
+                </p>
+                <p>
+                  <code>CTRL-N</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>[count] lines downward (linewise)</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/To the first character of the line (exclusive)/0">
+              <td class="command">
+                <p>
+                  <code>0</code>
+                </p>
+                <p>
+                  <code>&lt;Home&gt;</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>To the first character of the line (exclusive)</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/To the first non-blank character of the line/0">
+              <td class="command">
+                <p>
+                  <code>^</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>To the first non-blank character of the line</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/To the end of the line and [count - 1] lines downward/0">
+              <td class="command">
+                <p>
+                  <code>$</code>
+                </p>
+                <p>
+                  <code>&lt;End&gt;</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>To the end of the line and [count - 1] lines downward</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/To the first character of the screen line (exclusive) when lines wrap (&#39;wrap on). Differs from 0 when a line is wider than the screen   To the leftmost character of the current line that is on the screen when lines don&#39;t wrap (&#39;wrap&#39; off). Differs from 0 when the first character of the line is not on the screen/0">
+              <td class="command">
+                <p>
+                  <code>g0</code>
+                </p>
+                <p>
+                  <code>g&lt;Home&gt;</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name">
+                  <p>To the first character of the screen line (exclusive) when lines wrap ('wrap on). Differs from <code>0</code> when a line is wider than the screen</p>
+                  
+                  <p>To the leftmost character of the current line that is on the screen when lines don't wrap ('wrap' off). Differs from <code>0</code> when the first character of the line is not on the screen</p>
+                </div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/To the first non-blank character of the screen line (exclusive) when lines wrap (&#39;wrap&#39; on). Differs from ^ when a line is wider than the screen.    To the leftmost non-blank character of the current line that is on the screen when lines don&#39;t wrap (&#39;wrap&#39; off). Differs from ^ when the first non-blank character of the line is not on the screen/0">
+              <td class="command">
+                <p>
+                  <code>g^</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name">
+                  <p>To the first non-blank character of the screen line (exclusive) when lines wrap ('wrap' on). Differs from <code>^</code> when a line is wider than the screen. </p>
+                  
+                  <p>To the leftmost non-blank character of the current line that is on the screen when lines don't wrap ('wrap' off). Differs from <code>^</code> when the first non-blank character of the line is not on the screen</p>
+                </div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/To the last character of the screen line and [count - 1] screen lines downward (inclusive) when lines wrap (&#39;wrap&#39; on). Differs from $ when a line is wider than the screen.    To the rightmost character of the current line that is visible on the screen when lines don&#39;t wrap (&#39;wrap&#39; off). Differs from $ when the last character of the line is not on the screen or when a count is used/0">
+              <td class="command">
+                <p>
+                  <code>g$</code>
+                </p>
+                <p>
+                  <code>g&lt;End&gt;</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name">
+                  <p>To the last character of the screen line and [count - 1] screen lines downward (inclusive) when lines wrap ('wrap' on). Differs from <code>$</code> when a line is wider than the screen. </p>
+                  
+                  <p>To the rightmost character of the current line that is visible on the screen when lines don't wrap ('wrap' off). Differs from <code>$</code> when the last character of the line is not on the screen or when a count is used</p>
+                </div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/To [count]&#39;th occurrence of {char} to the right. The cursor is placed on {char} (inclusive)/0">
+              <td class="command">
+                <p>
+                  <code>f{char}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>To [count]'th occurrence of {char} to the right. The cursor is placed on {char} (inclusive)</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/To the [count]&#39;th occurrence of {char} to the left. The cursor is placed on {char} (inclusive)/0">
+              <td class="command">
+                <p>
+                  <code>F{char}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>To the [count]'th occurrence of {char} to the left. The cursor is placed on {char} (inclusive)</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/Till before [count]&#39;th occurrence of {char} to the right. The cursor is placed on the character left of {char} (inclusive)/0">
+              <td class="command">
+                <p>
+                  <code>t{char}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Till before [count]'th occurrence of {char} to the right. The cursor is placed on the character left of {char} (inclusive)</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/Till after [count]&#39;th occurrence of {char} to the left. The cursor is placed on the character right of {char} (inclusive)/0">
+              <td class="command">
+                <p>
+                  <code>T{char}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Till after [count]'th occurrence of {char} to the left. The cursor is placed on the character right of {char} (inclusive)</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/Repeat latest f, t, F or T [count] times/0">
+              <td class="command">
+                <p>
+                  <code>;</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Repeat latest f, t, F or T [count] times</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/Repeat latest f, t, F or T in opposite direction [count] times/0">
+              <td class="command">
+                <p>
+                  <code>,</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Repeat latest f, t, F or T in opposite direction [count] times</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/[count] lines upward, on the first non-blank character (linewise)/0">
+              <td class="command">
+                <p>
+                  <code>-  &lt;minus&gt;</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>[count] lines upward, on the first non-blank character (linewise)</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/[count] lines downward, on the first non-blank character (linewise)/0">
+              <td class="command">
+                <p>
+                  <code>+</code>
+                </p>
+                <p>
+                  <code>CTRL-M</code>
+                </p>
+                <p>
+                  <code>&lt;CR&gt;</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name">
+                  <p>[count] lines downward, on the first non-blank character
+                              (linewise)</p>
+                </div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/[count] - 1 lines downward, on the first non-blank character (linewise)/0">
+              <td class="command">
+                <p>
+                  <code>_  &lt;underscore&gt;</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>[count] - 1 lines downward, on the first non-blank character (linewise)</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/Goto line [count] on the first non-blank character/0">
+              <td class="command">
+                <p>
+                  <code>&lt;C-End&gt;</code>
+                </p>
+                <p>
+                  <code>G</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Goto line [count] on the first non-blank character</p></div>
+                <div class="notes"><p>Default: last line</p></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/Goto line [count] on the first non-blank character/0">
+              <td class="command">
+                <p>
+                  <code>&lt;C-Home&gt;</code>
+                </p>
+                <p>
+                  <code>gg</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Goto line [count] on the first non-blank character</p></div>
+                <div class="notes"><p>Default: first line</p></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/[count] words forward/0">
+              <td class="command">
+                <p>
+                  <code>&lt;S-Right&gt;</code>
+                </p>
+                <p>
+                  <code>w</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>[count] words forward</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/[count] WORDS forward/0">
+              <td class="command">
+                <p>
+                  <code>&lt;C-Right&gt;</code>
+                </p>
+                <p>
+                  <code>W</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>[count] WORDS forward</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/Forward to the end of word [count]/0">
+              <td class="command">
+                <p>
+                  <code>e</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Forward to the end of word [count]</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/Forward to the end of WORD [count]/0">
+              <td class="command">
+                <p>
+                  <code>E</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Forward to the end of WORD [count]</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/[count] words backward/0">
+              <td class="command">
+                <p>
+                  <code>&lt;S-Left&gt;</code>
+                </p>
+                <p>
+                  <code>b</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>[count] words backward</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/[count] WORDS backward/0">
+              <td class="command">
+                <p>
+                  <code>&lt;C-Left&gt;</code>
+                </p>
+                <p>
+                  <code>B</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>[count] WORDS backward</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/Backward to the end of word [count]/0">
+              <td class="command">
+                <p>
+                  <code>ge</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Backward to the end of word [count]</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/Backward to the end of WORD [count]/0">
+              <td class="command">
+                <p>
+                  <code>gE</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Backward to the end of WORD [count]</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="description" colspan="2">
+                <div class="name"></div>
+                <div class="notes">
+                  <p>The following commands move over words or WORDS.</p>
+                  
+                  <p>A word consists of a sequence of letters, digits and underscores, or a sequence of other non-blank characters, separated with white space (spaces, tabs, &lt;EOL&gt;). This can be changed with the 'iskeyword' option.</p>
+                  
+                  <p>A WORD consists of a sequence of non-blank characters, separated with white space. An empty line is also considered to be a word and a WORD.</p>
+                </div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/[count] sentences backward/0">
+              <td class="command">
+                <p>
+                  <code>(</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>[count] sentences backward</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/[count] sentences forward/0">
+              <td class="command">
+                <p>
+                  <code>)</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>[count] sentences forward</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/[count] paragraphs backward/0">
+              <td class="command">
+                <p>
+                  <code>{</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>[count] paragraphs backward</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/[count] paragraphs forward/0">
+              <td class="command">
+                <p>
+                  <code>}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>[count] paragraphs forward</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/[count] sections forward or to the next &#39;{&#39; in the first column/0">
+              <td class="command">
+                <p>
+                  <code>]]</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>[count] sections forward or to the next '{' in the first column</p></div>
+                <div class="notes"><p>When used after an operator, then the '}' in the first column</p></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/[count] sections forward or to the next &#39;}&#39; in the first column/0">
+              <td class="command">
+                <p>
+                  <code>][</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>[count] sections forward or to the next '}' in the first column</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/[count] sections backward or to the previous &#39;{&#39; in the first column/0">
+              <td class="command">
+                <p>
+                  <code>[[</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>[count] sections backward or to the previous '{' in the first column</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Moving Around/Entry/[count] sections backward or to the previous &#39;}&#39; in the first column/0">
+              <td class="command">
+                <p>
+                  <code>[]</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>[count] sections backward or to the previous '}' in the first column</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </section>
+      <section class="category">
+        <h2 id="//dash_ref/Category/Marks/1">
+          Marks
+        </h2>
+        <div class="scrollable">
+          <table>
+            <tbody><tr id="//dash_ref_Marks/Entry/Set mark {a-zA-Z} at cursor position/0">
+              <td class="command">
+                <p>
+                  <code>m{a-zA-Z}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Set mark {a-zA-Z} at cursor position</p></div>
+                <div class="notes"><p>Does not move the cursor, this is not a motion command</p></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Marks/Entry/Set the previous context mark/0">
+              <td class="command">
+                <p>
+                  <code>m'</code>
+                </p>
+                <p>
+                  <code>m\`</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Set the previous context mark</p></div>
+                <div class="notes"><p>This can be jumped to with the <code>''</code> or <code>``</code> command. Does not move the cursor, this is not a motion command</p></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Marks/Entry/Set mark {a-zA-Z} at last line number in [range], column 0/0">
+              <td class="command">
+                <p>
+                  <code>:[range]ma[rk] {a-zA-Z}</code>
+                </p>
+                <p>
+                  <code>:[range]k{a-zA-Z}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Set mark {a-zA-Z} at last line number in [range], column 0</p></div>
+                <div class="notes"><p>Default is cursor line</p></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Marks/Entry/To the first non-blank character on the line with mark {a-z} (linewise)/0">
+              <td class="command">
+                <p>
+                  <code>'{a-z}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>To the first non-blank character on the line with mark {a-z} (linewise)</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Marks/Entry/To the first non-blank character on the line with mark {A-Z0-9} in the correct file/0">
+              <td class="command">
+                <p>
+                  <code>'{A-Z0-9}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>To the first non-blank character on the line with mark {A-Z0-9} in the correct file</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Marks/Entry/To the mark {a-z}/0">
+              <td class="command">
+                <p>
+                  <code>`{a-z}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>To the mark {a-z}</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Marks/Entry/To the mark {A-Z0-9} in the correct file/0">
+              <td class="command">
+                <p>
+                  <code>`{A-Z0-9}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>To the mark {A-Z0-9} in the correct file</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Marks/Entry/List all the current marks (not a motion command)/0">
+              <td class="command">
+                <p>
+                  <code>:marks</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>List all the current marks (not a motion command)</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Marks/Entry/List the marks that are mentioned in {arg} (not a motion command). For example:/0">
+              <td class="command">
+                <p>
+                  <code>:marks {arg}</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>List the marks that are mentioned in {arg} (not a motion command). For example:</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </section>
+      <section class="category">
+        <h2 id="//dash_ref/Category/Searching/1">
+          Searching
+        </h2>
+        <div class="scrollable">
+          <table>
+            <tbody><tr id="//dash_ref_Searching/Entry/Search forward for the [count]&#39;th occurrence of {pattern}/0">
+              <td class="command">
+                <p>
+                  <code>/{pattern}[/]&lt;CR&gt;</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Search forward for the [count]'th occurrence of {pattern}</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Searching/Entry/Search forward for the [count]&#39;th occurrence of {pattern} and go {offset} lines up or down/0">
+              <td class="command">
+                <p>
+                  <code>/{pattern}/{offset}&lt;CR&gt;</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Search forward for the [count]'th occurrence of {pattern} and go {offset} lines up or down</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Searching/Entry/Search forward for the [count]&#39;th latest used pattern/0">
+              <td class="command">
+                <p>
+                  <code>/&lt;CR&gt;</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Search forward for the [count]'th latest used pattern</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Searching/Entry/Search forward for the [count]&#39;th latest used pattern with new/0">
+              <td class="command">
+                <p>
+                  <code>//{offset}&lt;CR&gt;</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Search forward for the [count]'th latest used pattern with new</p></div>
+                <div class="notes"><p>If {offset} is empty no offset is used</p></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Searching/Entry/Search backward for the [count]&#39;th previous occurrence of {pattern}/0">
+              <td class="command">
+                <p>
+                  <code>?{pattern}[?]&lt;CR&gt;</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Search backward for the [count]'th previous occurrence of {pattern}</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Searching/Entry/Search backward for the [count]&#39;th previous occurrence of {pattern} and go {offset} lines up or down/0">
+              <td class="command">
+                <p>
+                  <code>?{pattern}?{offset}&lt;CR&gt;</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Search backward for the [count]'th previous occurrence of {pattern} and go {offset} lines up or down</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Searching/Entry/Search backward for the [count]&#39;th latest used pattern/0">
+              <td class="command">
+                <p>
+                  <code>?&lt;CR&gt;</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Search backward for the [count]'th latest used pattern</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Searching/Entry/Search backward for the [count]&#39;th latest used pattern with new {offset}/0">
+              <td class="command">
+                <p>
+                  <code>??{offset}&lt;CR&gt;</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Search backward for the [count]'th latest used pattern with new {offset}</p></div>
+                <div class="notes"><p>If {offset} is empty no offset is used</p></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Searching/Entry/Repeat the latest %2F or ? [count] times/0">
+              <td class="command">
+                <p>
+                  <code>n</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Repeat the latest <code>/</code> or <code>?</code> [count] times</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Searching/Entry/Repeat the latest %2F or ? [count] times in opposite direction/0">
+              <td class="command">
+                <p>
+                  <code>N</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Repeat the latest <code>/</code> or <code>?</code> [count] times in opposite direction</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </section>
+      <section class="category">
+        <h2 id="//dash_ref/Category/Selecting Text (Visual Mode)/1">
+          Selecting Text (Visual Mode)
+        </h2>
+        <div class="scrollable">
+          <table>
+            <tbody><tr>
+              <td class="description" colspan="2">
+                <div class="name"></div>
+                <div class="notes">
+                  <p>To select text, enter visual mode with one of the commands below, and use motion commands to highlight the text you are interested in. Then, use some command on the text.</p>
+                  
+                  <p>The operators that can be used are:</p>
+                  
+                  <ul>
+                  <li><code>~</code>   switch case</li>
+                  <li><code>d</code>   delete</li>
+                  <li><code>c</code>   change</li>
+                  <li><code>y</code>   yank</li>
+                  <li><code>&gt;</code>   shift right</li>
+                  <li><code>&lt;</code>   shift left</li>
+                  <li><code>!</code>   filter through external command</li>
+                  <li><code>=</code>   filter through 'equalprg' option command</li>
+                  <li><code>gq</code>  format lines to 'textwidth' length</li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Selecting Text (Visual Mode)/Entry/Start Visual mode per character/0">
+              <td class="command">
+                <p>
+                  <code>v</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Start Visual mode per character</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Selecting Text (Visual Mode)/Entry/Start Visual mode linewise (horizontal selection)/0">
+              <td class="command">
+                <p>
+                  <code>V</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Start Visual mode linewise (horizontal selection)</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Selecting Text (Visual Mode)/Entry/Start Visual mode columnwise (vertical selection)/0">
+              <td class="command">
+                <p>
+                  <code>CTRL-V</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Start Visual mode columnwise (vertical selection)</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Selecting Text (Visual Mode)/Entry/Exit Visual mode without making any changes/0">
+              <td class="command">
+                <p>
+                  <code>&lt;Esc&gt;</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Exit Visual mode without making any changes</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </section>
+      <section class="category">
+        <h2 id="//dash_ref/Category/How to Suspend/1">
+          How to Suspend
+        </h2>
+        <div class="scrollable">
+          <table>
+            <tbody><tr id="//dash_ref_How to Suspend/Entry/Suspend Vim/0">
+              <td class="command">
+                <p>
+                  <code>CTRL-Z</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Suspend Vim</p></div>
+                <div class="notes"><p>Like <code>:stop</code>. Works in Normal and in Visual mode. In Insert and Command-line mode, the CTRL-Z is inserted as a normal character</p></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_How to Suspend/Entry/Suspend Vim!/0">
+              <td class="command">
+                <p>
+                  <code>:sus[pend][!]</code>
+                </p>
+                <p>
+                  <code>:st[op][!]</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Suspend Vim!</p></div>
+                <div class="notes"><p>If the '!' is not given and 'autowrite' is set, every buffer with changes and a file name is written out. If the '!' is given or 'autowrite' is not set, changed buffers are not written, don't forget to bring Vim back to the foreground later!</p></div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </section>
+      <section class="category">
+        <h2 id="//dash_ref/Category/Multiple Windows/1">
+          Multiple Windows
+        </h2>
+        <div class="scrollable">
+          <table>
+            <tbody><tr id="//dash_ref_Multiple Windows/Entry/Edit another file/0">
+              <td class="command">
+                <p>
+                  <code>:e filename</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Edit another file</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Multiple Windows/Entry/Split window and load another file/0">
+              <td class="command">
+                <p>
+                  <code>:split filename</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Split window and load another file</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Multiple Windows/Entry/Vertical split current window/0">
+              <td class="command">
+                <p>
+                  <code>CTRL-WV</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Vertical split current window</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Multiple Windows/Entry/Horizontal split current window/0">
+              <td class="command">
+                <p>
+                  <code>CTRL-WS</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Horizontal split current window</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Multiple Windows/Entry/Move cursor up a window/0">
+              <td class="command">
+                <p>
+                  <code>CTRL-W Up Arrow</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Move cursor up a window</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Multiple Windows/Entry/Move cursor to another window (cycle)/0">
+              <td class="command">
+                <p>
+                  <code>CTRL-W CTRL-W</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Move cursor to another window (cycle)</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Multiple Windows/Entry/Maximize current window/0">
+              <td class="command">
+                <p>
+                  <code>CTRL-W_</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Maximize current window</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Multiple Windows/Entry/Make all equal size/0">
+              <td class="command">
+                <p>
+                  <code>CTRL-W=</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Make all equal size</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Multiple Windows/Entry/Increase window size by 10 lines/0">
+              <td class="command">
+                <p>
+                  <code>10 CTRL-W+</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Increase window size by 10 lines</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Multiple Windows/Entry/Vertical split/0">
+              <td class="command">
+                <p>
+                  <code>:vsplit file</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Vertical split</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Multiple Windows/Entry/Same as split, but readonly/0">
+              <td class="command">
+                <p>
+                  <code>:sview file</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Same as split, but readonly</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Multiple Windows/Entry/Close current window/0">
+              <td class="command">
+                <p>
+                  <code>:hide</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Close current window</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Multiple Windows/Entry/Keep only this window open/0">
+              <td class="command">
+                <p>
+                  <code>:only</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Keep only this window open</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Multiple Windows/Entry/Show current buffers/0">
+              <td class="command">
+                <p>
+                  <code>:ls</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Show current buffers</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+            <tr id="//dash_ref_Multiple Windows/Entry/Open buffer #2 in this window/0">
+              <td class="command">
+                <p>
+                  <code>:b 2</code>
+                </p>
+              </td>
+              <td class="description">
+                <div class="name"><p>Open buffer #2 in this window</p></div>
+                <div class="notes"></div>
+              </td>
+            </tr>
+          </tbody></table>
+        </div>
+      </section>
+      <section class="notes">
+        <h2>Notes</h2>
+        <ul>
+        <li>Based on the cheat sheet from <a href="http://www.fprintf.net/vimCheatSheet.html">fprintf</a>.</li>
+        <li>Converted by <a href="https://github.com/ariefbayu">Arief Bayu Purwanto</a>.</li>
+        </ul>
+      </section>
+    </article>
+    <footer>
+      You can modify and improve this cheat sheet <a onclick="window.dash.openExternal_(this.href); return false;" href="http://cheat.kapeli.com/">here</a>
+    </footer>
+  
+
+</body></html>

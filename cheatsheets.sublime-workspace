@@ -413,17 +413,25 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Yizhe/Documents/Git/cheatsheets",
-		"/Users/Yizhe/Documents/Git/cheatsheets/git",
-		"/Users/Yizhe/Documents/Git/cheatsheets/gpio"
+		"/Users/Yizhe/Documents/Git/cheatsheets"
 	],
 	"file_history":
 	[
+		"/Users/Yizhe/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/Yizhe/Documents/Git/cheatsheets/index.html",
+		"/Users/Yizhe/Documents/Git/cheatsheets/git/style.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/html_entities/style.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/http_head_field/style.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/http_status_codes/style.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/vim/style.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/style.css",
+		"/Users/Yizhe/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/Yizhe/Documents/Git/cheatsheets/vim/index.html",
+		"/Users/Yizhe/Documents/Git/cheatsheets/html_entities/index.html",
+		"/Users/Yizhe/Documents/Git/cheatsheets/http_status_codes/index.html",
+		"/Users/Yizhe/Documents/Git/cheatsheets/http_head_field/index.html",
 		"/Users/Yizhe/Documents/Git/cheatsheets/git/index.html",
 		"/Users/Yizhe/Documents/Git/cheatsheets/gpio/index.html",
-		"/Users/Yizhe/Documents/Git/cheatsheets/style.css",
-		"/Users/Yizhe/Documents/Git/cheatsheets/git/style.css",
 		"/Users/Yizhe/Documents/Git/cheatsheets/.gitignore",
 		"/Users/Yizhe/Downloads/Git.html",
 		"/Users/Yizhe/Downloads/Git_files/style.css",
@@ -431,8 +439,6 @@
 		"/Users/Yizhe/Documents/leetcode/tests/spec-word-pattern.js",
 		"/Users/Yizhe/Documents/leetcode/assets/solutions/javascript/isomorphic-strings.js",
 		"/Users/Yizhe/Documents/leetcode/assets/solutions/javascript/word-pattern.js",
-		"/Users/Yizhe/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/Yizhe/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/Users/Yizhe/Documents/leetcode/assets/questions/list.js",
 		"/Users/Yizhe/Documents/leetcode/views/problem_solution.html",
 		"/Users/Yizhe/Documents/leetcode/index.html",
@@ -540,7 +546,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -554,6 +560,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"cheatset_resources/",
 			"toBeTruthy",
 			"		'",
 			"' +\n",
@@ -621,6 +628,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"../fonts/",
 			"",
 			"\"</code> ",
 			"= <code class=\"mark\">\"",
@@ -698,7 +706,7 @@
 	"project": "cheatsheets.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 66.0
 	},
 	"save_all_on_build": true,
 	"select_file":
