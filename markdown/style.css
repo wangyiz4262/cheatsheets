@@ -15,8 +15,17 @@ body > *:last-child {
 }
 .container {
     position: relative;
-    max-width: 80%;
     margin: 0 auto;
+}
+@media screen and (min-width: 501px) {
+    .container {
+        max-width: 80%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
 }
 a {
     color: #4183C4;
