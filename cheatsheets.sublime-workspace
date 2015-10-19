@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"li",
+				"link	Tag"
+			],
+			[
 				"te",
 				"text-align"
 			],
@@ -296,10 +300,6 @@
 				"problemCtrl"
 			],
 			[
-				"li",
-				"li	Tag"
-			],
-			[
 				"t",
 				"tbody	Tag"
 			],
@@ -417,14 +417,17 @@
 	],
 	"file_history":
 	[
-		"/Users/Yizhe/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Yizhe/Documents/Git/cheatsheets/style.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/markdown/index.html",
 		"/Users/Yizhe/Documents/Git/cheatsheets/index.html",
+		"/Users/Yizhe/Documents/Git/cheatsheets/markdown/style.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/markdown/script.js",
+		"/Users/Yizhe/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/Yizhe/Documents/Git/cheatsheets/git/style.css",
 		"/Users/Yizhe/Documents/Git/cheatsheets/html_entities/style.css",
 		"/Users/Yizhe/Documents/Git/cheatsheets/http_head_field/style.css",
 		"/Users/Yizhe/Documents/Git/cheatsheets/http_status_codes/style.css",
 		"/Users/Yizhe/Documents/Git/cheatsheets/vim/style.css",
-		"/Users/Yizhe/Documents/Git/cheatsheets/style.css",
 		"/Users/Yizhe/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/Users/Yizhe/Documents/Git/cheatsheets/vim/index.html",
 		"/Users/Yizhe/Documents/Git/cheatsheets/html_entities/index.html",
@@ -541,8 +544,7 @@
 		"/Users/yizhewang/Sites/payment_terminal/.gitignore",
 		"/Users/yizhewang/Sites/payment_terminal/apps/setup/js/controllers.js",
 		"/Users/yizhewang/Sites/payment_terminal/views/index.html",
-		"/Users/yizhewang/Sites/payment_terminal/js/controllers/index.js",
-		"/Users/yizhewang/Sites/payment_terminal/index.html"
+		"/Users/yizhewang/Sites/payment_terminal/js/controllers/index.js"
 	],
 	"find":
 	{
@@ -560,6 +562,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"dest file",
+			"stormtroop",
+			"></",
 			"cheatset_resources/",
 			"toBeTruthy",
 			"		'",

@@ -17,11 +17,11 @@ header {
 
 .btn {
 	width: 10em;
-	height: 2.5em;
-	margin: 4px 4px;
+	height: 3em;
+	margin: 5px 5px;
 	background-color: #83bdbd;
 	border: 1px solid;
-	border-radius: 0.4em;
+	border-radius: 0.5em;
 }
 
 a .btn,
