@@ -417,9 +417,11 @@
 	],
 	"file_history":
 	[
+		"/Users/Yizhe/Documents/Git/cheatsheets/gpio/index.html",
+		"/Users/Yizhe/Documents/Git/cheatsheets/assets/css/style.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/markdown/index.html",
 		"/Users/Yizhe/Documents/Git/cheatsheets/markdown/style.css",
 		"/Users/Yizhe/Documents/Git/cheatsheets/style.css",
-		"/Users/Yizhe/Documents/Git/cheatsheets/markdown/index.html",
 		"/Users/Yizhe/Documents/Git/cheatsheets/index.html",
 		"/Users/Yizhe/Documents/Git/cheatsheets/markdown/script.js",
 		"/Users/Yizhe/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
@@ -434,7 +436,6 @@
 		"/Users/Yizhe/Documents/Git/cheatsheets/http_status_codes/index.html",
 		"/Users/Yizhe/Documents/Git/cheatsheets/http_head_field/index.html",
 		"/Users/Yizhe/Documents/Git/cheatsheets/git/index.html",
-		"/Users/Yizhe/Documents/Git/cheatsheets/gpio/index.html",
 		"/Users/Yizhe/Documents/Git/cheatsheets/.gitignore",
 		"/Users/Yizhe/Downloads/Git.html",
 		"/Users/Yizhe/Downloads/Git_files/style.css",
@@ -543,8 +544,7 @@
 		"/Users/yizhewang/Sites/payment/index.html",
 		"/Users/yizhewang/Sites/payment_terminal/.gitignore",
 		"/Users/yizhewang/Sites/payment_terminal/apps/setup/js/controllers.js",
-		"/Users/yizhewang/Sites/payment_terminal/views/index.html",
-		"/Users/yizhewang/Sites/payment_terminal/js/controllers/index.js"
+		"/Users/yizhewang/Sites/payment_terminal/views/index.html"
 	],
 	"find":
 	{
