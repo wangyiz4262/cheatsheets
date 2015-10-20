@@ -1,0 +1,290 @@
+<!-- saved from url=(0032)http://lzone.de/cheat-sheet/Bash -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Bash Cheat Sheet</title>
+		<meta name="msvalidate.01" content="E44DCBC369E3C3527E9DD8CCA28D3680">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="Syntax,File,Operators,String,,Manipulation,Arrays,Hashes,Here,Document,Regular,Expressions,Regexp,Matching,Match,Extraction,Validate,IPs,Debugging,Scripts,Writing,Safer,Network,Connections,Simulate,Reading,From,a,History,Handling,Adding,Timestamps,Easier,Navigation,Misc,Command,Completion,Kill,all,childs,on,exit,Apply,ulimit,Changes,Instantly,PS1:,Escape,Non-Print,Chars,Bash,Cheat,Sheet">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div id="main">
+			<a href="../index.html" id="return"><button class="btn">Return</button></a>
+
+			<h1 class="topic">Bash Cheat Sheet</h1>
+
+			<div class="toc">
+				<span class="title">Contents</span>
+				<ul>
+					<li class="h3"><a href="#Syntax">Syntax</a></li>
+					<li class="h4"><a href="#File Operators">File Operators</a></li>
+					<li class="h4"><a href="#String Operators">String Operators </a></li>
+					<li class="h4"><a href="#String Manipulation">String Manipulation</a></li>
+					<li class="h4"><a href="#Arrays">Arrays</a></li>
+					<li class="h4"><a href="#Hashes">Hashes</a></li>
+					<li class="h4"><a href="#Here Document">Here Document</a></li>
+					<li class="h3"><a href="#Regular Expressions">Regular Expressions</a></li>
+					<li class="h4"><a href="#Regexp Matching">Regexp Matching</a></li>
+					<li class="h4"><a href="#Regexp Match Extraction">Regexp Match Extraction</a></li>
+					<li class="h4"><a href="#Validate IPs">Validate IPs</a></li>
+					<li class="h3"><a href="#Debugging Scripts">Debugging Scripts</a></li>
+					<li class="h3"><a href="#Writing Safer Scripts">Writing Safer Scripts</a></li>
+					<li class="h3"><a href="#Network Connections">Network Connections</a></li>
+					<li class="h3"><a href="#Simulate Reading From a File">Simulate Reading From a File</a></li>
+					<li class="h3"><a href="#History">History</a></li>
+					<li class="h4"><a href="#History Handling">History Handling</a></li>
+					<li class="h4"><a href="#Adding Timestamps">Adding Timestamps</a></li>
+					<li class="h4"><a href="#Easier History Navigation">Easier History Navigation</a></li>
+					<li class="h3"><a href="#Misc">Misc</a></li>
+					<li class="h4"><a href="#Command Completion">Command Completion</a></li>
+					<li class="h4"><a href="#Kill all childs on exit">Kill all childs on exit</a></li>
+					<li class="h4"><a href="#Apply ulimit Changes Instantly">Apply ulimit Changes Instantly</a></li>
+					<li class="h4"><a href="#PS1: Escape Non-Print Chars">PS1: Escape Non-Print Chars</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<a name="Syntax">
+					<h3>Syntax</h3>
+				</a>
+				<a name="File Operators">
+					<h4>File Operators</h4>
+				</a>
+				The complete list of bash 4.2 test operators:
+				<pre>-a FILE        True if file exists.
+-b FILE        True if file is block special.
+-c FILE        True if file is character special.
+-d FILE        True if file is a directory.
+-e FILE        True if file exists.
+-f FILE        True if file exists and is a regular file.
+-g FILE        True if file is set-group-id.
+-h FILE        True if file is a symbolic link.
+-L FILE        True if file is a symbolic link.
+-k FILE        True if file has its `sticky' bit set.
+-p FILE        True if file is a named pipe.
+-r FILE        True if file is readable by you.
+-s FILE        True if file exists and is not empty.
+-S FILE        True if file is a socket.
+-t FD          True if FD is opened on a terminal.
+-u FILE        True if the file is set-user-id.
+-w FILE        True if the file is writable by you.
+-x FILE        True if the file is executable by you.
+-O FILE        True if the file is effectively owned by you.
+-G FILE        True if the file is effectively owned by your group.
+-N FILE        True if the file has been modified since it was last read.
+    
+FILE1 -nt FILE2	 True if file1 is newer than file2 (according to
+                 modification date).
+FILE1 -ot FILE2  True if file1 is older than file2.
+FILE1 -ef FILE2  True if file1 is a hard link to file2.
+</pre>
+				<a name="String Operators ">
+					<h4>String Operators </h4>
+				</a>
+				The complete list of bash 4.2 string operators:
+				<pre>-z STRING			True if string is empty.
+-n STRING			True if string is not empty.
+STRING1 = STRING2		True if the strings are equal.
+STRING1 != STRING2	True if the strings are not equal.
+STRING1 &lt; STRING2		True if STRING1 sorts before STRING2 lexicographically.
+STRING1 &gt; STRING2		True if STRING1 sorts after STRING2 lexicographically.
+</pre>
+				<a name="String Manipulation">
+					<h4>String Manipulation</h4>
+				</a>
+				<pre>${str:position}			# substring starting at position
+${str:position:len}		# substring starting at position with length len
+${str#ubstring}			# delete shortest match from front
+${str##substring}		# delete longest match from front
+${str%substring}		# delete shortest match from back
+${str%%substring}		# delete longest match from back
+${str/pattern/replacement}	# pattern replace
+${str/#pattern/replacement}	# pattern replace at front
+${str/%pattern/replacement}	# pattern replace at end
+${str//pattern/replacement}	# global pattern replace
+</pre>
+				<a name="Arrays">
+					<h4>Arrays</h4>
+				</a>
+				Indexed arrays require no declaration
+				<pre>arr=("string 1", "string 2", "string 3")
+arr=([1]="string 1", [2]="string 2", [3]="string 3")
+arr[4]="string 4"
+</pre>
+				Check below under "Hashes" for accessing the different properties of an array.
+				<a name="Hashes">
+					<h4>Hashes</h4>
+				</a>
+				Since Bash v4
+				<pre class="brush:bash"># Hashes need declaration!
+declare -A arr
+
+# Assigning values to associative arrays
+arr[my key]="my value"
+arr["my key"]="my value"
+arr[$my_key]="my value"
+
+# Fetching values
+echo ${arr[my key]}
+echo ${arr["my key"]}
+echo ${arr[$my_key]}
+
+# Accessing the array
+${arr[@]}         # Returns all indizes and their items (doesn't work with associative arrays)
+${arr[*]}         # Returns all items
+${!arr[*]}        # Returns all indizes
+${#arr[*]}        # Number elements
+${#arr[$n]}       # Length of $nth item
+
+# Pushing to array
+arr+=("new string value", "another new value")
+</pre>
+				<a name="Here Document">
+					<h4>Here Document</h4>
+				</a>
+				Bash allow here documents like this
+				<pre>cat &lt;&lt;EOT
+[...]
+EOT
+</pre>
+				To disable substitution in the here doc text quote the marker with single or double quotes.
+				<pre>cat &lt;&lt;'EOT'</pre>
+				To strip leading tabs use
+				<pre>cat &lt;&lt;-EOT</pre>
+				<a name="regexp">
+				</a>
+				<a name="Regular Expressions">
+					<h3>Regular Expressions</h3>
+				</a>
+				<a name="Regexp Matching">
+					<h4>Regexp Matching</h4>
+				</a>
+				Use conditions with doubled [] and the =~ operator. Ensure not to quote the regular expression. Only BRE are allowed. If the regexp has whitespaces put it in a variable first.
+				<pre class="brush:bash">if [[ "$string" =~ ^[0-9]+$ ]]; then 
+    echo "Is a number"
+fi</pre>
+				<a name="Regexp Match Extraction">
+					<h4>Regexp Match Extraction</h4>
+				</a>
+				<b>Variant #1:</b> You can do this with grouping in bash. Despite only BRE being supported grouping works also. Note how you need to set the regexp into a variable because you must not quote it in the if condition! 
+				<pre class="brush:bash">REGEXP="2013:06:23 ([0-9]+):([0-9]+)"
+if [[ "$string" =~ $REGEXP ]]; then
+    echo "Hour ${BASH_REMATCH[1]} Minute ${BASH_REMATCH[2]}"
+fi</pre>
+				<b>Variant #2:</b> Actually using "expr" can much simpler especially when only on value is to be extracted: 
+				<pre class="brush:bash">hour=$(expr match "$string" '2013:06:23 \([0-9]\+\)')</pre>
+				<a name="Validate IPs">
+					<h4>Validate IPs</h4>
+				</a>
+				If you need to validate an IP try the following function
+				<pre class="brush:bash">function validate_ip {
+        local net=$1
+        [[ $net =~ ^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}/[0-9]{1,2}$ ]] || return 1
+        [[ ${net#*/} -le 32 ]] || return 1
+        local ip=${net%/*}
+        local -a oc=(${ip//\./ })
+        [[ ${oc[0]} -le 255 &amp;&amp; ${oc[1]} -le 255 &amp;&amp; ${oc[2]} -le 255 &amp;&amp; ${oc[3]} -le 255 ]] || return 1
+        return 0
+}
+</pre>
+				<a name="Debugging Scripts">
+					<h3>Debugging Scripts</h3>
+				</a>
+				For simple tracing add a 
+				<pre>set -x</pre>
+				in the script or append the "-x" to the shebang or run the script like this
+				<pre>bash -x &lt;script name&gt;</pre>
+				As "set -x" enables tracing you can disable it with "set +x" again. This allows tracing only a part of the code (e.g. a condition in an inner loop).
+				Additionally to "-x" you may want to set "-v" to see the shell commands that are executed. Combine both to
+				<pre>set -xv</pre>
+				<a name="Writing Safer Scripts">
+					<h3>Writing Safer Scripts</h3>
+				</a>
+				Using 
+				<pre>set -e</pre>
+				in a script you ensure that you never forget to check an exit code. Because if you do and the command calls returns an exit code != 0 the script just terminates. Of course you can also use it to not write checks if it is ok to just bail out.
+				<a name="Network Connections">
+					<h3>Network Connections</h3>
+				</a>
+				<pre># Establish a connection to 91.92.93.94:80 on file handle 4 with
+if ! exec 4&lt;&gt; /dev/tcp/91.92.93.94/80; then
+	echo "ERROR: Connection failed!"
+fi
+</pre>
+				<pre># Write something
+echo -e "GET / HTTP/1.0\n" &gt;&amp;4
+
+# Read something
+cat &lt;&amp;4
+</pre>
+				<pre># Close the socket
+exec &lt;&amp;4-
+exec &gt;&amp;4-
+</pre>
+				<a name="Simulate Reading From a File">
+					<h3>Simulate Reading From a File</h3>
+				</a>
+				Sometimes you might need to pass a file name when you want to pipe output from a commands. Then you could write to a file first and then used it, but you can also use the "&gt;()" or "&lt;()" operator. 
+				This can be used with all tools that demand a file name paramter:
+				<pre>diff &lt;(echo abc;echo def) &lt;(echo abc;echo abc)</pre>
+				<a name="History">
+					<h3>History</h3>
+				</a>
+				<a name="History Handling">
+					<h4>History Handling</h4>
+				</a>
+				Here are some improvements for the bash history handling:
+				<pre>unset HISTFILE      # Stop logging history in this bash instance
+HISTIGNORE="[ ]*"   # Do not log commands with leading spaces
+HISTIGNORE="&amp;"      # Do not log a command multiple times
+</pre>
+				<pre># Change up/down arrow key behaviour to navigate only similar commands
+bind '"\e[A":history-search-backward'
+bind '"\e[B":history-search-forward'
+</pre>
+				<a name="Adding Timestamps">
+					<h4>Adding Timestamps</h4>
+				</a>
+				To add timestamps to your history set the following environment variable:
+				<pre>HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S " # Log with timestamps
+</pre>
+				<a name="Easier History Navigation">
+					<h4>Easier History Navigation</h4>
+				</a>
+				If you do not like Ctrl-R to nagivate the history you can define other keys as PgUp and PgDown in /etc/inputrc: 
+				<pre>   "\e[5~": history-search-backward
+   "\e[6~": history-search-forward</pre>
+				<a name="Misc">
+					<h3>Misc</h3>
+				</a>
+				<a name="Command Completion">
+					<h4>Command Completion</h4>
+				</a>
+				How to setup your own bash completion schemas. Here is a git example:
+				<pre>complete -W 'add branch checkout clone commit diff grep init log merge mv pull push rebase rm show status tag' git
+
+complete -p    # To list defined completion schemes</pre>
+				Note that the above example propably already comes prepared with your Linux distribution. You might want to check default definitions installed in /etc/bash_completion.d for a good starting point.
+				<a name="Kill all childs on exit">
+					<h4>Kill all childs on exit</h4>
+				</a>
+				<pre>trap true TERM
+kill -- -$$</pre>
+				<a name="Apply ulimit Changes Instantly">
+					<h4>Apply ulimit Changes Instantly</h4>
+				</a>
+				The problem behind this is documented in <a href="http://lzone.de/apply+limits+immediately">this blog post</a> but it boils down to try to use the "-i" switch:
+				<pre>sudo -i -u &lt;user&gt;</pre>
+				If it doesn't work you might need to investigate and change the PAM configuration.
+				<a name="PS1: Escape Non-Print Chars">
+					<h4>PS1: Escape Non-Print Chars</h4>
+				</a>
+				To avoid incorrect line break behaviour when editing the command line you need to 
+				escape control characters in PS1 like this:
+				<pre>\[color definition\]</pre>
+				For example:
+				<pre>\[\033[31m\] some text \[\033[0m\]</pre>
+			</div>
+	</body>
+</html>
