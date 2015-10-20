@@ -20,20 +20,29 @@
 		#gpio {
 			display: block;
 			height: auto;
-			margin: 2em auto;
+			margin: 1.5em auto;
 		}
 		@media screen and (min-width: 800px) {
+			#return {
+				float: right;
+			}
 			#gpio {
 				width: 55%;
 				max-width: 450px;
 			}
 		}
 		@media screen and (min-width: 501px) and (max-width: 799px) {
+			#return {
+				float: right;
+			}
 			#gpio {
 				width: 75%;
 			}
 		}
 		@media screen and (max-width: 500px) {
+			#return {
+				margin: 0.5em auto;
+			}
 			#gpio {
 				width: 95%;
 			}
@@ -41,7 +50,6 @@
 		.btn {
 			width: 5em;
 			height: 1.5em;
-			margin: 2px 4px;
 			background-color: #83bdbd;
 			border: 1px solid;
 			border-radius: 0.2em;
@@ -55,15 +63,12 @@
 			text-decoration: none;
 			cursor: pointer;
 		}
-		#return {
-			float: right;
-		}
 	</style>
 </head>
 <body>
 	<div class="container">
 		<header>GPIO Layout</header>
-		<a href="../index.html" id="return"><button class="btn">Return</button></a>
+		<a href=".." id="return"><button class="btn">Return</button></a>
 		<img id="gpio" src="gpio.png" alt="GPIO Layout Demo">
 	</div>
 </body>

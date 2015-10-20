@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 1em;
-    font-family: 'Nimbus Sans L', 'Liberation Sans', Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     line-height: 1.45;
     color: #222;
 }
@@ -43,7 +43,7 @@ h2 {
     border-bottom: 2px solid #3a7791;
     padding: 6px 18px;
     font-size: 12pt;
-    font-family: "Open Sans Condensed", Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.5;
