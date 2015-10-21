@@ -2,9 +2,7 @@ body {
     font-family: Helvetica, arial, sans-serif;
     font-size: 14px;
     line-height: 1.6;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding: 30px;
+    margin: 1em;
 }
 body > *:first-child {
     margin-top: 0 !important;
@@ -382,6 +380,7 @@ sup {
 
 code[class*="language-"],
 pre[class*="language-"] {
+    overflow: auto;
     color: black;
     text-shadow: 0 1px white;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
