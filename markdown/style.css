@@ -351,15 +351,33 @@ sup {
         width: 70%;
         max-width: 1000px;
     }
+    .btn {
+        width: 6em;
+    }
+    #return {
+        right: 3%;
+    }
 }
 @media screen and (min-width: 501px) and (max-width: 799px) {
     .container {
         width: 80%;
     }
+    .btn {
+        width: 5em;
+    }
+    #return {
+        right: 0%;
+    }
 }
 @media screen and (max-width: 500px) {
     .container {
         width: 100%;
+    }
+    .btn {
+        width: 5em;
+    }
+    #return {
+        right: 1%;
     }
 }
 @media print {
@@ -497,12 +515,12 @@ pre[class*="language-"] {
     cursor: help;
 }
 .btn {
-    width: 6em;
     height: 1.5em;
     margin: 2px 4px;
+    padding: 2px 0;
     background-color: #83bdbd;
     border: 1px solid;
-    border-radius: 0.2em;
+    border-radius: 0.4em;
 }
 a .btn,
 a .btn:hover,
@@ -514,8 +532,6 @@ a .btn:focus {
     cursor: pointer;
 }
 #return {
-    position: absolute;
-    z-index: 10;
-    right: 0;
-    top: 20px;
+    position: fixed;
+    top: 0.4em;
 }

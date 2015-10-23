@@ -359,10 +359,22 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 27.0,
-		"last_filter": "",
+		"height": 375.0,
+		"last_filter": ":w",
 		"selected_items":
 		[
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"ss ht",
+				"Set Syntax: HTML"
+			],
+			[
+				":q",
+				"Set Syntax: SQL"
+			],
 			[
 				"ht",
 				"Set Syntax: HTML (Tcl)"
@@ -374,10 +386,6 @@
 			[
 				"ip",
 				"Package Control: Install Package"
-			],
-			[
-				":w",
-				":w - Save"
 			],
 			[
 				"ss js",
@@ -417,25 +425,37 @@
 	],
 	"file_history":
 	[
+		"/Users/Yizhe/Documents/Git/cheatsheets/awk/assets/fonts.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/awk/index.html",
+		"/Users/Yizhe/Documents/Git/cheatsheets/awk/assets/style.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/awk/assets/bootstrap.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/git/style.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/awk/style.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/awk/AWK Cheat Sheet _ ShortcutFoo_files/application-2ee68fc77374c719414e95f5a44543319542d7c07e97044d6ead55630c0db2d4.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/awk/js/pdf.js",
+		"/Users/Yizhe/Documents/Git/cheatsheets/awk/js/awk.js",
+		"/Users/Yizhe/Documents/Git/cheatsheets/awk/script.js",
+		"/Users/Yizhe/Documents/Git/cheatsheets/git/index.html",
+		"/Users/Yizhe/Documents/Git/cheatsheets/awk/pdf.js",
 		"/Users/Yizhe/Documents/Git/cheatsheets/markdown/style.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/vim/style.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/vim/index.html",
+		"/Users/Yizhe/Documents/Git/cheatsheets/http_status_codes/index.html",
+		"/Users/Yizhe/Documents/Git/cheatsheets/http_head_field/index.html",
+		"/Users/Yizhe/Documents/Git/cheatsheets/html_entities/index.html",
+		"/Users/Yizhe/Documents/Git/cheatsheets/http_head_field/style.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/http_status_codes/style.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/html_entities/style.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/bash/index.html",
+		"/Users/Yizhe/Documents/Git/cheatsheets/bash/style.css",
+		"/Users/Yizhe/Documents/Git/cheatsheets/index.html",
 		"/Users/Yizhe/Documents/Git/cheatsheets/gpio/index.html",
 		"/Users/Yizhe/Documents/Git/cheatsheets/assets/css/style.css",
 		"/Users/Yizhe/Documents/Git/cheatsheets/markdown/index.html",
 		"/Users/Yizhe/Documents/Git/cheatsheets/style.css",
-		"/Users/Yizhe/Documents/Git/cheatsheets/index.html",
 		"/Users/Yizhe/Documents/Git/cheatsheets/markdown/script.js",
 		"/Users/Yizhe/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/Yizhe/Documents/Git/cheatsheets/git/style.css",
-		"/Users/Yizhe/Documents/Git/cheatsheets/html_entities/style.css",
-		"/Users/Yizhe/Documents/Git/cheatsheets/http_head_field/style.css",
-		"/Users/Yizhe/Documents/Git/cheatsheets/http_status_codes/style.css",
-		"/Users/Yizhe/Documents/Git/cheatsheets/vim/style.css",
 		"/Users/Yizhe/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/Users/Yizhe/Documents/Git/cheatsheets/vim/index.html",
-		"/Users/Yizhe/Documents/Git/cheatsheets/html_entities/index.html",
-		"/Users/Yizhe/Documents/Git/cheatsheets/http_status_codes/index.html",
-		"/Users/Yizhe/Documents/Git/cheatsheets/http_head_field/index.html",
-		"/Users/Yizhe/Documents/Git/cheatsheets/git/index.html",
 		"/Users/Yizhe/Documents/Git/cheatsheets/.gitignore",
 		"/Users/Yizhe/Downloads/Git.html",
 		"/Users/Yizhe/Downloads/Git_files/style.css",
@@ -532,19 +552,7 @@
 		"/D/Yizhe/Documents/Leetcode_JavaScript/views/categories.html",
 		"/D/Yizhe/Documents/Leetcode_JavaScript/views/problem.html",
 		"/D/Yizhe/Documents/WebService/payment/index.html",
-		"/D/Yizhe/Documents/WebService/payment/js/app.js",
-		"/D/Yizhe/Documents/WebService/payment/views/welcome/set-language.html",
-		"/D/Yizhe/Documents/Leetcode_JavaScript/views/array/problems.html",
-		"/D/Yizhe/Documents/WebService/payment/js/modules/welcome.js",
-		"/D/Yizhe/Documents/WebService/payment/views/welcome/home.html",
-		"/D/Yizhe/Documents/WebService/payment/views/welcome/login.html",
-		"/Users/yizhewang/Downloads/routing.sh",
-		"/Users/yizhewang/Downloads/fis.pac",
-		"/Users/yizhewang/Sites/payment/js/modules/welcome/controllers.js",
-		"/Users/yizhewang/Sites/payment/index.html",
-		"/Users/yizhewang/Sites/payment_terminal/.gitignore",
-		"/Users/yizhewang/Sites/payment_terminal/apps/setup/js/controllers.js",
-		"/Users/yizhewang/Sites/payment_terminal/views/index.html"
+		"/D/Yizhe/Documents/WebService/payment/js/app.js"
 	],
 	"find":
 	{
@@ -562,6 +570,23 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h1 {\n    font-size: 32px\n}",
+			".container",
+			"                                        </div>\n                                        <div>",
+			"                                        <div>",
+			"../../src/display",
+			"../../src/shared",
+			"article",
+			"header",
+			"../fonts",
+			"font-size: ",
+			"font-size: 13px;",
+			"font-size: 14px;",
+			"font-size",
+			"h2",
+			".container",
+			"#main",
+			"topic",
 			"@media",
 			"dest file",
 			"stormtroop",
@@ -634,6 +659,13 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
+			"js",
+			"../assets/fonts",
+			"font-size: 0.9em;",
+			"font-size: 1em;",
+			".topic",
+			".container",
 			"../fonts/",
 			"",
 			"\"</code> ",
