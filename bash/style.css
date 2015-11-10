@@ -17,22 +17,6 @@ h2 {
 #main {
     margin: auto;
 }
-@media screen and (min-width: 800px) {
-    #main {
-        width: 60%;
-        max-width: 1000px;
-    }
-}
-@media screen and (min-width: 501px) and (max-width: 799px) {
-    #main {
-        width: 80%;
-    }
-}
-@media screen and (max-width: 500px) {
-    #main {
-        width: 100%;
-    }
-}
 .menu {
     margin-right: 20px;
 }
@@ -93,32 +77,54 @@ pre,
     font-family: Monospace;
     font-size: 120%;
 }
-@media (min-width: 600px) {
+@media screen and (max-width: 500px) {
+    #main {
+        width: 100%;
+    }
+    .btn {
+        width: 5em;
+    }
+    #return {
+        right: 1%;
+    }
+}
+@media (min-width: 501px) {
+    #main {
+        width: 80%;
+    }
     .index {
-        -webkit-column-count: 2;
-        /* Chrome, Safari, Opera */
-        
-        -moz-column-count: 2;
-        /* Firefox */
-        
+        -webkit-column-count: 2;    /* Chrome, Safari, Opera */
+        -moz-column-count: 2;       /* Firefox */
         column-count: 2;
     }
     #searchbar {
         visibility: visible;
     }
+    .btn {
+        width: 5em;
+    }
+    #return {
+        right: 0%;
+    }
 }
 @media (min-width: 800px) {
+    #main {
+        width: 60%;
+        max-width: 1000px;
+    }
     .index {
-        -webkit-column-count: 4;
-        /* Chrome, Safari, Opera */
-        
-        -moz-column-count: 4;
-        /* Firefox */
-        
+        -webkit-column-count: 4;    /* Chrome, Safari, Opera */
+        -moz-column-count: 4;       /* Firefox */
         column-count: 4;
     }
     #searchbar {
         visibility: visible;
+    }
+    .btn {
+        width: 6em;
+    }
+    #return {
+        right: 3%;
     }
 }
 .index a {
@@ -258,8 +264,9 @@ table.cheatsheet td {
     vertical-align: top;
 }
 .btn {
-    width: 6em;
+    padding: 2px 0;
     height: 1.5em;
+    margin: 2px 4px;
     background-color: #83bdbd;
     border: 1px solid;
     border-radius: 0.2em;
@@ -274,7 +281,7 @@ a .btn:focus {
     cursor: pointer;
 }
 #return {
-    float: right;
-    margin-top: 3px;
-
+    z-index: 10;
+    position: fixed;
+    top: 0.4em;
 }

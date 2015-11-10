@@ -4,6 +4,7 @@
 <head>
 	<title>AWK Cheatsheet</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="wideth=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="assets/fonts.css">
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
@@ -17,769 +18,765 @@
 	</header>
 	<div class='wrapper'>
 		<div class='container'>
-			<div id='app-container'>
-				<div class="col-xs-12">
-					<div class="row" style="text-align:center;">
-						<div class="col-xs-12 dojo-name-container">
-							<h1 class="dojo-name" style="font-size: 24px;">AWK Cheat Sheet</h1>
+			<div class="row" style="text-align:center;">
+				<div class="col-xs-12 dojo-name-container">
+					<h1 class="dojo-name" style="font-size: 24px;">AWK Cheat Sheet</h1>
+				</div>
+			</div>
+			<div class="row" style="margin-top: 20px;">
+				<div class="units-container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="plans-section-header">
+								Basics I
+							</div>
 						</div>
 					</div>
-					<div class="row" style="margin-top: 20px;">
-						<div class="units-container">
-							<div class="row">
-								<div class="col-xs-12">
-									<div class="plans-section-header">
-										Basics I
-									</div>
+					<div class="row">
+						<div class="shortcuts-container col-xs-12">
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									$1
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Reference first column
+								</div>
+								<div class="col-xs-1">
+
 								</div>
 							</div>
-							<div class="row">
-								<div class="shortcuts-container col-xs-12">
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											$1
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Reference first column
-										</div>
-										<div class="col-xs-1">
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									awk '/pattern/ {action}' file↵
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Execute action for matched pattern 'pattern' on file 'file'
+								</div>
+								<div class="col-xs-1">
 
-										</div>
-									</div>
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											awk '/pattern/ {action}' file↵
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Execute action for matched pattern 'pattern' on file 'file'
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											;
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Char to separate two actions
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											print
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print current record line
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											$0
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Reference current record line
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-xs-12">
-									<div class="plans-section-header">
-										Variables I
-									</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									;
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Char to separate two actions
+								</div>
+								<div class="col-xs-1">
+
 								</div>
 							</div>
-							<div class="row">
-								<div class="shortcuts-container col-xs-12">
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											$2
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Reference second column
-										</div>
-										<div class="col-xs-1">
 
-										</div>
-									</div>
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									print
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print current record line
+								</div>
+								<div class="col-xs-1">
 
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											FS
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Field separator of input file (default whitespace)
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											NF
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Number of fields in current record
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											NR
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Line number of the current record
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-xs-12">
-									<div class="plans-section-header">
-										Basics II
-									</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									$0
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Reference current record line
+								</div>
+								<div class="col-xs-1">
+
 								</div>
 							</div>
-							<div class="row">
-								<div class="shortcuts-container col-xs-12">
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											^
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Match beginning of field
-										</div>
-										<div class="col-xs-1">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="plans-section-header">
+								Variables I
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="shortcuts-container col-xs-12">
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									$2
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Reference second column
+								</div>
+								<div class="col-xs-1">
 
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											~
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Match opterator
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											!~
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Do not match operator
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											-F
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Command line option to specify input field delimiter
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											BEGIN
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Denotes block executed once at start
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											END
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Denotes block executed once at end
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											str1 str2
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Concat st1 and str2
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-xs-12">
-									<div class="plans-section-header">
-										One-Line Exercises I
-									</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									FS
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Field separator of input file (default whitespace)
+								</div>
+								<div class="col-xs-1">
+
 								</div>
 							</div>
-							<div class="row">
-								<div class="shortcuts-container col-xs-12">
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											awk '{print $1}' file↵
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print first field for each record in file
-										</div>
-										<div class="col-xs-1">
 
-										</div>
-									</div>
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									NF
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Number of fields in current record
+								</div>
+								<div class="col-xs-1">
 
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											awk '/regex/' file↵
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print only lines that match regex in file
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											awk '!/regex/' file↵
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print only lines that do not match regex in file
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											awk '$2 == "foo"' file↵
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print any line where field 2 is equal to "foo" in file
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											awk '$2 != "foo"' file↵
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print lines where field 2 is NOT equal to "foo" in file
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											awk '$1 ~ /regex/' file↵
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print line if field 1 matches regex in file
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											awk '$1 !~ /regex/' file↵
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print line if filed 1 does NOT match regex in file
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-xs-12">
-									<div class="plans-section-header">
-										Variables II
-									</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									NR
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Line number of the current record
+								</div>
+								<div class="col-xs-1">
+
 								</div>
 							</div>
-							<div class="row">
-								<div class="shortcuts-container col-xs-12">
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											FILENAME
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Reference current input file
-										</div>
-										<div class="col-xs-1">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="plans-section-header">
+								Basics II
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="shortcuts-container col-xs-12">
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									^
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Match beginning of field
+								</div>
+								<div class="col-xs-1">
 
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											FNR
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Reference number of the current record relative to current input file
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											OFS
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Field separator of the outputted data (default whitespace)
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											ORS
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Record separator of the outputted data (default newline)
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											RS
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Record separator of input file (default newline)
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-xs-12">
-									<div class="plans-section-header">
-										Variables III
-									</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									~
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Match opterator
+								</div>
+								<div class="col-xs-1">
+
 								</div>
 							</div>
-							<div class="row">
-								<div class="shortcuts-container col-xs-12">
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											CONVFMT
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Conversion format used when converting numbers (default %.6g)
-										</div>
-										<div class="col-xs-1">
 
-										</div>
-									</div>
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									!~
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Do not match operator
+								</div>
+								<div class="col-xs-1">
 
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											SUBSEP
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Separates multiple subscripts (default 034)
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											OFMT
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Output format for numbers (default %.6g)
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											ARGC
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Argument count, assignable
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											ARGV
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Argument array, assignable
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											ENVIRON
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Array of environment variables
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-xs-12">
-									<div class="plans-section-header">
-										Functions I
-									</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									-F
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Command line option to specify input field delimiter
+								</div>
+								<div class="col-xs-1">
+
 								</div>
 							</div>
-							<div class="row">
-								<div class="shortcuts-container col-xs-12">
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											index(s,t)
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Position in string s where string t occurs, 0 if not found
-										</div>
-										<div class="col-xs-1">
 
-										</div>
-									</div>
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									BEGIN
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Denotes block executed once at start
+								</div>
+								<div class="col-xs-1">
 
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											length(s)
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Length of string s (or $0 if no arg)
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											rand
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Random number between 0 and 1
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											substr(s,index,len)
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Return len-char substring of s that begins at index (counted from 1)
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											srand
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Set seed for rand and return previous seed
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											int(x)
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Truncate x to integer value
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-xs-12">
-									<div class="plans-section-header">
-										Functions II
-									</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									END
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Denotes block executed once at end
+								</div>
+								<div class="col-xs-1">
+
 								</div>
 							</div>
-							<div class="row">
-								<div class="shortcuts-container col-xs-12">
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											split(s,a,fs)
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Split string s into array a split by fs, returning length of a
-										</div>
-										<div class="col-xs-1">
 
-										</div>
-									</div>
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									str1 str2
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Concat st1 and str2
+								</div>
+								<div class="col-xs-1">
 
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											match(s,r)
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Position in string s where regex r occurs, or 0 if not found
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											sub(r,t,s)
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Substitute t for first occurrence of regex r in string s (or $0 if s not given)
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											gsub(r,t,s)
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Substitute t for all occurrences of regex r in string s
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-xs-12">
-									<div class="plans-section-header">
-										Functions III
-									</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="plans-section-header">
+								One-Line Exercises I
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="shortcuts-container col-xs-12">
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									awk '{print $1}' file↵
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print first field for each record in file
+								</div>
+								<div class="col-xs-1">
+
 								</div>
 							</div>
-							<div class="row">
-								<div class="shortcuts-container col-xs-12">
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											system(cmd)
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Execute cmd and return exit status
-										</div>
-										<div class="col-xs-1">
 
-										</div>
-									</div>
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									awk '/regex/' file↵
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print only lines that match regex in file
+								</div>
+								<div class="col-xs-1">
 
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											tolower(s)
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> String s to lowercase
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											toupper(s)
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> String s to uppercase
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
-
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											getline
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Set $0 to next input record from current input file.
-										</div>
-										<div class="col-xs-1">
-
-										</div>
-									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-xs-12">
-									<div class="plans-section-header">
-										One-Line Exercises II
-									</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									awk '!/regex/' file↵
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print only lines that do not match regex in file
+								</div>
+								<div class="col-xs-1">
+
 								</div>
 							</div>
-							<div class="row">
-								<div class="shortcuts-container col-xs-12">
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											awk 'NR!=1{print $1}' file↵
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print first field for each record in file excluding the first record
-										</div>
-										<div class="col-xs-1">
 
-										</div>
-									</div>
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									awk '$2 == "foo"' file↵
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print any line where field 2 is equal to "foo" in file
+								</div>
+								<div class="col-xs-1">
 
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											awk 'END{print NR}' file↵
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Count lines in file
-										</div>
-										<div class="col-xs-1">
+								</div>
+							</div>
 
-										</div>
-									</div>
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									awk '$2 != "foo"' file↵
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print lines where field 2 is NOT equal to "foo" in file
+								</div>
+								<div class="col-xs-1">
 
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											awk '/foo/{n++}; END {print n+0}' file↵
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print total number of lines that contain foo
-										</div>
-										<div class="col-xs-1">
+								</div>
+							</div>
 
-										</div>
-									</div>
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									awk '$1 ~ /regex/' file↵
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print line if field 1 matches regex in file
+								</div>
+								<div class="col-xs-1">
 
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											awk '{total=total+NF};END{print total}' file↵
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print total number of fields in all lines
-										</div>
-										<div class="col-xs-1">
+								</div>
+							</div>
 
-										</div>
-									</div>
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									awk '$1 !~ /regex/' file↵
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print line if filed 1 does NOT match regex in file
+								</div>
+								<div class="col-xs-1">
 
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											awk '/regex/{getine;print}' file↵
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print line immediately after regex, but not line containing regex in file
-										</div>
-										<div class="col-xs-1">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="plans-section-header">
+								Variables II
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="shortcuts-container col-xs-12">
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									FILENAME
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Reference current input file
+								</div>
+								<div class="col-xs-1">
 
-										</div>
-									</div>
+								</div>
+							</div>
 
-									<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
-										<div class="cheatsheet-keys col-xs-4">
-											awk 'length &gt; 32' file↵
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print lines with more than 32 characters in file
-										</div>
-										<div class="col-xs-1">
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									FNR
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Reference number of the current record relative to current input file
+								</div>
+								<div class="col-xs-1">
 
-										</div>
-									</div>
+								</div>
+							</div>
 
-									<div class="cheatsheet-shortcut-container col-xs-12">
-										<div class="cheatsheet-keys col-xs-4">
-											awk 'NR==12' file↵
-										</div>
-										<div class="cheatsheet-name col-xs-7">
-											<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print line number 12 of file
-										</div>
-									</div>
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									OFS
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Field separator of the outputted data (default whitespace)
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									ORS
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Record separator of the outputted data (default newline)
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									RS
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Record separator of input file (default newline)
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="plans-section-header">
+								Variables III
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="shortcuts-container col-xs-12">
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									CONVFMT
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Conversion format used when converting numbers (default %.6g)
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									SUBSEP
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Separates multiple subscripts (default 034)
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									OFMT
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Output format for numbers (default %.6g)
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									ARGC
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Argument count, assignable
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									ARGV
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Argument array, assignable
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									ENVIRON
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Array of environment variables
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="plans-section-header">
+								Functions I
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="shortcuts-container col-xs-12">
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									index(s,t)
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Position in string s where string t occurs, 0 if not found
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									length(s)
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Length of string s (or $0 if no arg)
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									rand
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Random number between 0 and 1
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									substr(s,index,len)
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Return len-char substring of s that begins at index (counted from 1)
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									srand
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Set seed for rand and return previous seed
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									int(x)
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Truncate x to integer value
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="plans-section-header">
+								Functions II
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="shortcuts-container col-xs-12">
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									split(s,a,fs)
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Split string s into array a split by fs, returning length of a
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									match(s,r)
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Position in string s where regex r occurs, or 0 if not found
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									sub(r,t,s)
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Substitute t for first occurrence of regex r in string s (or $0 if s not given)
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									gsub(r,t,s)
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Substitute t for all occurrences of regex r in string s
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="plans-section-header">
+								Functions III
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="shortcuts-container col-xs-12">
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									system(cmd)
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Execute cmd and return exit status
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									tolower(s)
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> String s to lowercase
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									toupper(s)
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> String s to uppercase
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									getline
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Set $0 to next input record from current input file.
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="plans-section-header">
+								One-Line Exercises II
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="shortcuts-container col-xs-12">
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									awk 'NR!=1{print $1}' file↵
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print first field for each record in file excluding the first record
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									awk 'END {print NR}' file↵
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Count lines in file
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									awk '/foo/{n++}; END {print n+0}' file↵
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print total number of lines that contain foo
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									awk '{total=total+NF}; END {print total}' file↵
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print total number of fields in all lines
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									awk '/regex/{getine; print}' file↵
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print line immediately after regex, but not line containing regex in file
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12 is-odd">
+								<div class="cheatsheet-keys col-xs-6">
+									awk 'length &gt; 32' file↵
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print lines with more than 32 characters in file
+								</div>
+								<div class="col-xs-1">
+
+								</div>
+							</div>
+
+							<div class="cheatsheet-shortcut-container col-xs-12">
+								<div class="cheatsheet-keys col-xs-6">
+									awk 'NR==12' file↵
+								</div>
+								<div class="cheatsheet-name col-xs-6">
+									<span class="preview-command glyphicon glyphicon-camera hidden"></span> Print line number 12 of file
 								</div>
 							</div>
 						</div>
